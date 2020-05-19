@@ -1,0 +1,36 @@
+﻿Study,Date,Field,Macrofield,Approach,Size
+Ioannidis,2005-08-30,Science,General,Theoretical,1
+Glasziou,2008-06-26,Medicine,Life Science,Census,80
+Baggerly & Coombes,2009-09-01,Cancer biology,Life Science,Refactor,8
+Hothorn,2009-08-17,Biostatistics,Life Science,Census,56
+Ioannidis,2009-01-28,Genetics,Life Science,Reproduction,18
+Anda,2009-07-30,Software engineering,CS & Eng,Replication,4
+Vandewalle,2009-04-22,Signal processing,CS & Eng,Census,134
+Prinz,2011-08-31,Biomedical sciences,Life Science,Survey,23
+Horthorn & Leisch,2011-01-28,Bioinformatics,Life Science,Census,100
+Begley & Ellis,2012-03-29,Cancer biology,Life Science,Replication,53
+Collberg,2014-03-21,Computer science,CS & Eng,Census,613
+OSC,2015-08-28,Psychology,Social Science,Replication,100
+Bandrowski ,2015-05-29,Biomedical sciences,Life Science,Census,100
+Patel,2015-06-06,Epidemiology,Life Science,Robustness test,417
+Névéol ,2016-11-05,NLP,CS & Eng,Replication,3
+Vasilevsky,2017-04-25,Biomedical sciences,Life Science,Census,318
+Kitzes,2017-10-17,Science,General,Case narrative,31
+Barone,2017-10-19,Biological sciences,Life Science,Survey,704
+Kim & Dumas,2017-10-31,Bioinformatics,Life Science,Refactor,1
+Reproducibility Project,2017-01-19,Cancer biology,Life Science,Replication,9
+Camerer,2016-03-25,Economics,Social Science,Replication,18
+Olorisade,2017-06-16,Machine learning,CS & Eng,Census,30
+Strupler & Wilkinson,2017-11-14,Archaeology,Social Science,Case narrative,1
+Danchev,2018-01-15,Comparative toxicogenomics,Life Science,Census,3363
+Kjensmo & Gundersen ,2017-06-01,Artificial intelligence,CS & Eng,Census,400
+Gertler,2018-02-21,Economics,Social Science,Census,203
+Stodden,2018-03-12,Computational science,CS & Eng,Reproduction,204
+Madduri,2018-06-20,Genomics,Life Science,Case narrative,1
+Camerer,2018-08-27,Social Sciences,Social Science,Replication,21
+Silberzahn,2018-08-23,Psychology,Social Science,Robustness test,29
+Eaton,2018-10-03,Microbiome immuno oncology,Life Science,Replication,1
+Vaquero-Garcia,2018-11-08,Bioinformatics,Life Science,Robustness test,1
+Wallach,2018-11-20,Biomedical Sciences,Life Science,Census,149
+Miller,2018-10-18,Bioinformatics,Life Science,Refactor,1
+Konkol,2018-08-13,Geosciences,Life Science,Reproduction,41
