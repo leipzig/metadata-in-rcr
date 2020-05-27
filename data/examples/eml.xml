@@ -1,0 +1,553 @@
+<eml:eml xmlns:eml="eml://ecoinformatics.org/eml-2.1.1" xmlns:ds="eml://ecoinformatics.org/dataset-2.1.1" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:stmml="http://www.xml-cml.org/schema/stmml_1.1" packageId="vulnerability_weighting_matrix_20150511172556.csv" system="doi">
+  <dataset scope="document">
+    <title>Cumulative human impacts: Supplementary data</title>
+    <creator>
+      <individualName>
+        <givenName>Benjamin</givenName>
+        <surName>Halpern</surName>
+      </individualName>
+      <electronicMailAddress>halpern@bren.ucsb.edu</electronicMailAddress>
+    </creator>
+    <creator>
+      <individualName>
+        <givenName>Melanie</givenName>
+        <surName>Frazier</surName>
+      </individualName>
+      <electronicMailAddress>frazier@nceas.ucsb.edu</electronicMailAddress>
+    </creator>
+    <creator>
+      <individualName>
+        <givenName>John</givenName>
+        <surName>Potapenko</surName>
+      </individualName>
+      <electronicMailAddress>potapenko@umail.ucsb.edu</electronicMailAddress>
+    </creator>
+    <creator>
+      <individualName>
+        <givenName>Kenneth</givenName>
+        <surName>Casey</surName>
+      </individualName>
+      <electronicMailAddress>kenneth.casey@noaa.gov</electronicMailAddress>
+    </creator>
+    <creator>
+      <individualName>
+        <givenName>Kellee</givenName>
+        <surName>Koenig</surName>
+      </individualName>
+      <electronicMailAddress>kkoenig@conservation.org</electronicMailAddress>
+    </creator>
+    <creator>
+      <individualName>
+        <givenName>Catherine</givenName>
+        <surName>Longo</surName>
+      </individualName>
+      <electronicMailAddress>longo@nceas.ucsb.edu</electronicMailAddress>
+    </creator>
+    <creator>
+      <individualName>
+        <givenName>Julia</givenName>
+        <surName>Lowndes</surName>
+      </individualName>
+      <electronicMailAddress>lowndes@nceas.ucsb.edu</electronicMailAddress>
+    </creator>
+    <creator>
+      <individualName>
+        <givenName>Cotton</givenName>
+        <surName>Rockwood</surName>
+      </individualName>
+      <electronicMailAddress>rrockwood@ucsd.edu</electronicMailAddress>
+    </creator>
+    <creator>
+      <individualName>
+        <givenName>Elizabeth</givenName>
+        <surName>Selig</surName>
+      </individualName>
+      <electronicMailAddress>eselig@conservation.org</electronicMailAddress>
+    </creator>
+    <creator>
+      <individualName>
+        <givenName>Kimberly</givenName>
+        <surName>Selkoe</surName>
+      </individualName>
+      <electronicMailAddress>selkoe@nceas.ucsb.edu</electronicMailAddress>
+    </creator>
+    <creator>
+      <individualName>
+        <givenName>Shaun</givenName>
+        <surName>Walbridge</surName>
+      </individualName>
+      <electronicMailAddress>shaun.walbridge@gmail.com</electronicMailAddress>
+    </creator>
+    <pubDate>2015-05-11</pubDate>
+    <abstract>This is a portion of the data used to calculate 2008 and 2013 cumulative human impacts  
+in: Halpern et al. 2015. Spatial and temporal changes in cumulative human impacts on the world's ocean.  
+
+Seven data packages are available for this project:  
+(1) supplementary data (habitat data and other files); 
+(2) raw stressor data (2008 and 2013);  
+(3) stressor data rescaled by one time period (2008 and 2013, scaled from 0-1); 
+(4) stressor data rescaled by two time periods (2008 and 2013, scaled from 0-1); 
+(5) pressure and cumulative impacts data (2013, all pressures);
+(6) pressure and cumulative impacts data (2008 and 2013, subset of pressures updated for both time periods);
+(7) change in pressures and cumulative impact (2008 to 2013).
+All raster files are .tif format and coordinate reference system is mollweide wgs84.
+
+Here is an overview of the calculations:
+Raw stressor data -&gt; rescaled stressor data (values between 0-1) -&gt; 
+pressure data (stressor data after adjusting for habitat/pressure vulnerability) -&gt; 
+cumulative impact (sum of pressure data) -&gt; difference between 2008 and 2013 pressure and cumulative impact data. 
+
+This data package includes 20 habitat rasters (preceded by hab_) and a vulnerability 
+weighting matrix (csv) that describes the vulnerability of each habitat to each stressor.  
+Also included are an ocean mask raster and a raster of the number of habitats in each raster cell 
+(used to average the habitat vulnerability-weighted stressor intensities).</abstract>
+    <intellectualRights>CC0, http://creativecommons.org/publicdomain/zero/1.0</intellectualRights>
+    <coverage>
+      <geographicCoverage>
+        <geographicDescription>Global Oceans</geographicDescription>
+        <boundingCoordinates>
+          <westBoundingCoordinate>-180</westBoundingCoordinate>
+          <eastBoundingCoordinate>180</eastBoundingCoordinate>
+          <northBoundingCoordinate>90</northBoundingCoordinate>
+          <southBoundingCoordinate>-90</southBoundingCoordinate>
+        </boundingCoordinates>
+      </geographicCoverage>
+      <temporalCoverage>
+        <rangeOfDates>
+          <beginDate>
+            <calendarDate>2008</calendarDate>
+          </beginDate>
+          <endDate>
+            <calendarDate>2013</calendarDate>
+          </endDate>
+        </rangeOfDates>
+      </temporalCoverage>
+    </coverage>
+    <contact>
+      <individualName>
+        <givenName>Benjamin</givenName>
+        <surName>Halpern</surName>
+      </individualName>
+      <electronicMailAddress>halpern@bren.ucsb.edu</electronicMailAddress>
+    </contact>
+    <methods>
+      <methodStep>
+        <description>For methods please refer to the paper.</description>
+      </methodStep>
+    </methods>
+    <otherEntity scope="document">
+      <entityName>hab_beach_mol.zip</entityName>
+      <physical>
+        <objectName>hab_beach_mol.zip</objectName>
+        <size>2266846</size>
+        <dataFormat>
+          <externallyDefinedFormat>
+            <formatName>ESRI Arc/View ShapeFile</formatName>
+          </externallyDefinedFormat>
+        </dataFormat>
+        <distribution>
+          <online>
+            <url>https://knb.ecoinformatics.org/knb/d1/mn/v1/hab_beach_mol_20150511172524</url>
+          </online>
+        </distribution>
+      </physical>
+      <entityType>application/zip</entityType>
+    </otherEntity>
+    <otherEntity scope="document">
+      <entityName>hab_coral_reef_mol.zip</entityName>
+      <physical>
+        <objectName>hab_coral_reef_mol.zip</objectName>
+        <size>761545</size>
+        <dataFormat>
+          <externallyDefinedFormat>
+            <formatName>ESRI Arc/View ShapeFile</formatName>
+          </externallyDefinedFormat>
+        </dataFormat>
+        <distribution>
+          <online>
+            <url>https://knb.ecoinformatics.org/knb/d1/mn/v1/hab_coral_reef_mol_20150511172525</url>
+          </online>
+        </distribution>
+      </physical>
+      <entityType>application/zip</entityType>
+    </otherEntity>
+    <otherEntity scope="document">
+      <entityName>hab_d_h_bottom_mol.zip</entityName>
+      <physical>
+        <objectName>hab_d_h_bottom_mol.zip</objectName>
+        <size>1892219</size>
+        <dataFormat>
+          <externallyDefinedFormat>
+            <formatName>ESRI Arc/View ShapeFile</formatName>
+          </externallyDefinedFormat>
+        </dataFormat>
+        <distribution>
+          <online>
+            <url>https://knb.ecoinformatics.org/knb/d1/mn/v1/hab_d_h_bottom_mol_20150511172527</url>
+          </online>
+        </distribution>
+      </physical>
+      <entityType>application/zip</entityType>
+    </otherEntity>
+    <otherEntity scope="document">
+      <entityName>hab_d_s_benthic_mol.zip</entityName>
+      <physical>
+        <objectName>hab_d_s_benthic_mol.zip</objectName>
+        <size>3401254</size>
+        <dataFormat>
+          <externallyDefinedFormat>
+            <formatName>ESRI Arc/View ShapeFile</formatName>
+          </externallyDefinedFormat>
+        </dataFormat>
+        <distribution>
+          <online>
+            <url>https://knb.ecoinformatics.org/knb/d1/mn/v1/hab_d_s_benthic_mol_20150511172529</url>
+          </online>
+        </distribution>
+      </physical>
+      <entityType>application/zip</entityType>
+    </otherEntity>
+    <otherEntity scope="document">
+      <entityName>hab_deep_waters_mol.zip</entityName>
+      <physical>
+        <objectName>hab_deep_waters_mol.zip</objectName>
+        <size>2328826</size>
+        <dataFormat>
+          <externallyDefinedFormat>
+            <formatName>ESRI Arc/View ShapeFile</formatName>
+          </externallyDefinedFormat>
+        </dataFormat>
+        <distribution>
+          <online>
+            <url>https://knb.ecoinformatics.org/knb/d1/mn/v1/hab_deep_waters_mol_20150511172530</url>
+          </online>
+        </distribution>
+      </physical>
+      <entityType>application/zip</entityType>
+    </otherEntity>
+    <otherEntity scope="document">
+      <entityName>hab_hard_shelf_mol.zip</entityName>
+      <physical>
+        <objectName>hab_hard_shelf_mol.zip</objectName>
+        <size>760216</size>
+        <dataFormat>
+          <externallyDefinedFormat>
+            <formatName>ESRI Arc/View ShapeFile</formatName>
+          </externallyDefinedFormat>
+        </dataFormat>
+        <distribution>
+          <online>
+            <url>https://knb.ecoinformatics.org/knb/d1/mn/v1/hab_hard_shelf_mol_20150511172531</url>
+          </online>
+        </distribution>
+      </physical>
+      <entityType>application/zip</entityType>
+    </otherEntity>
+    <otherEntity scope="document">
+      <entityName>hab_hard_slope_mol.zip</entityName>
+      <physical>
+        <objectName>hab_hard_slope_mol.zip</objectName>
+        <size>1180618</size>
+        <dataFormat>
+          <externallyDefinedFormat>
+            <formatName>ESRI Arc/View ShapeFile</formatName>
+          </externallyDefinedFormat>
+        </dataFormat>
+        <distribution>
+          <online>
+            <url>https://knb.ecoinformatics.org/knb/d1/mn/v1/hab_hard_slope_mol_20150511172533</url>
+          </online>
+        </distribution>
+      </physical>
+      <entityType>application/zip</entityType>
+    </otherEntity>
+    <otherEntity scope="document">
+      <entityName>hab_inttidalmud_mol.zip</entityName>
+      <physical>
+        <objectName>hab_inttidalmud_mol.zip</objectName>
+        <size>2265126</size>
+        <dataFormat>
+          <externallyDefinedFormat>
+            <formatName>ESRI Arc/View ShapeFile</formatName>
+          </externallyDefinedFormat>
+        </dataFormat>
+        <distribution>
+          <online>
+            <url>https://knb.ecoinformatics.org/knb/d1/mn/v1/hab_inttidalmud_mol_20150511172534</url>
+          </online>
+        </distribution>
+      </physical>
+      <entityType>application/zip</entityType>
+    </otherEntity>
+    <otherEntity scope="document">
+      <entityName>hab_kelp_mol.zip</entityName>
+      <physical>
+        <objectName>hab_kelp_mol.zip</objectName>
+        <size>960617</size>
+        <dataFormat>
+          <externallyDefinedFormat>
+            <formatName>ESRI Arc/View ShapeFile</formatName>
+          </externallyDefinedFormat>
+        </dataFormat>
+        <distribution>
+          <online>
+            <url>https://knb.ecoinformatics.org/knb/d1/mn/v1/hab_kelp_mol_20150511172535</url>
+          </online>
+        </distribution>
+      </physical>
+      <entityType>application/zip</entityType>
+    </otherEntity>
+    <otherEntity scope="document">
+      <entityName>hab_mangroves_mol.zip</entityName>
+      <physical>
+        <objectName>hab_mangroves_mol.zip</objectName>
+        <size>357776</size>
+        <dataFormat>
+          <externallyDefinedFormat>
+            <formatName>ESRI Arc/View ShapeFile</formatName>
+          </externallyDefinedFormat>
+        </dataFormat>
+        <distribution>
+          <online>
+            <url>https://knb.ecoinformatics.org/knb/d1/mn/v1/hab_mangroves_mol_20150511172536</url>
+          </online>
+        </distribution>
+      </physical>
+      <entityType>application/zip</entityType>
+    </otherEntity>
+    <otherEntity scope="document">
+      <entityName>hab_rky_intidal_mol.zip</entityName>
+      <physical>
+        <objectName>hab_rky_intidal_mol.zip</objectName>
+        <size>2265124</size>
+        <dataFormat>
+          <externallyDefinedFormat>
+            <formatName>ESRI Arc/View ShapeFile</formatName>
+          </externallyDefinedFormat>
+        </dataFormat>
+        <distribution>
+          <online>
+            <url>https://knb.ecoinformatics.org/knb/d1/mn/v1/hab_rky_intidal_mol_20150511172538</url>
+          </online>
+        </distribution>
+      </physical>
+      <entityType>application/zip</entityType>
+    </otherEntity>
+    <otherEntity scope="document">
+      <entityName>hab_rocky_reef_mol.zip</entityName>
+      <physical>
+        <objectName>hab_rocky_reef_mol.zip</objectName>
+        <size>887900</size>
+        <dataFormat>
+          <externallyDefinedFormat>
+            <formatName>ESRI Arc/View ShapeFile</formatName>
+          </externallyDefinedFormat>
+        </dataFormat>
+        <distribution>
+          <online>
+            <url>https://knb.ecoinformatics.org/knb/d1/mn/v1/hab_rocky_reef_mol_20150511172539</url>
+          </online>
+        </distribution>
+      </physical>
+      <entityType>application/zip</entityType>
+    </otherEntity>
+    <otherEntity scope="document">
+      <entityName>hab_s_t_s_bottom_mol.zip</entityName>
+      <physical>
+        <objectName>hab_s_t_s_bottom_mol.zip</objectName>
+        <size>2942703</size>
+        <dataFormat>
+          <externallyDefinedFormat>
+            <formatName>ESRI Arc/View ShapeFile</formatName>
+          </externallyDefinedFormat>
+        </dataFormat>
+        <distribution>
+          <online>
+            <url>https://knb.ecoinformatics.org/knb/d1/mn/v1/hab_s_t_s_bottom_mol_20150511172541</url>
+          </online>
+        </distribution>
+      </physical>
+      <entityType>application/zip</entityType>
+    </otherEntity>
+    <otherEntity scope="document">
+      <entityName>hab_salt_marsh_mol.zip</entityName>
+      <physical>
+        <objectName>hab_salt_marsh_mol.zip</objectName>
+        <size>2265120</size>
+        <dataFormat>
+          <externallyDefinedFormat>
+            <formatName>ESRI Arc/View ShapeFile</formatName>
+          </externallyDefinedFormat>
+        </dataFormat>
+        <distribution>
+          <online>
+            <url>https://knb.ecoinformatics.org/knb/d1/mn/v1/hab_salt_marsh_mol_20150511172542</url>
+          </online>
+        </distribution>
+      </physical>
+      <entityType>application/zip</entityType>
+    </otherEntity>
+    <otherEntity scope="document">
+      <entityName>hab_seagrass_mol.zip</entityName>
+      <physical>
+        <objectName>hab_seagrass_mol.zip</objectName>
+        <size>485956</size>
+        <dataFormat>
+          <externallyDefinedFormat>
+            <formatName>ESRI Arc/View ShapeFile</formatName>
+          </externallyDefinedFormat>
+        </dataFormat>
+        <distribution>
+          <online>
+            <url>https://knb.ecoinformatics.org/knb/d1/mn/v1/hab_seagrass_mol_20150511172544</url>
+          </online>
+        </distribution>
+      </physical>
+      <entityType>application/zip</entityType>
+    </otherEntity>
+    <otherEntity scope="document">
+      <entityName>hab_seamounts_mol.zip</entityName>
+      <physical>
+        <objectName>hab_seamounts_mol.zip</objectName>
+        <size>591423</size>
+        <dataFormat>
+          <externallyDefinedFormat>
+            <formatName>ESRI Arc/View ShapeFile</formatName>
+          </externallyDefinedFormat>
+        </dataFormat>
+        <distribution>
+          <online>
+            <url>https://knb.ecoinformatics.org/knb/d1/mn/v1/hab_seamounts_mol_20150511172545</url>
+          </online>
+        </distribution>
+      </physical>
+      <entityType>application/zip</entityType>
+    </otherEntity>
+    <otherEntity scope="document">
+      <entityName>hab_soft_shelf_mol.zip</entityName>
+      <physical>
+        <objectName>hab_soft_shelf_mol.zip</objectName>
+        <size>2582464</size>
+        <dataFormat>
+          <externallyDefinedFormat>
+            <formatName>ESRI Arc/View ShapeFile</formatName>
+          </externallyDefinedFormat>
+        </dataFormat>
+        <distribution>
+          <online>
+            <url>https://knb.ecoinformatics.org/knb/d1/mn/v1/hab_soft_shelf_mol_20150511172546</url>
+          </online>
+        </distribution>
+      </physical>
+      <entityType>application/zip</entityType>
+    </otherEntity>
+    <otherEntity scope="document">
+      <entityName>hab_soft_slope_mol.zip</entityName>
+      <physical>
+        <objectName>hab_soft_slope_mol.zip</objectName>
+        <size>3216658</size>
+        <dataFormat>
+          <externallyDefinedFormat>
+            <formatName>ESRI Arc/View ShapeFile</formatName>
+          </externallyDefinedFormat>
+        </dataFormat>
+        <distribution>
+          <online>
+            <url>https://knb.ecoinformatics.org/knb/d1/mn/v1/hab_soft_slope_mol_20150511172548</url>
+          </online>
+        </distribution>
+      </physical>
+      <entityType>application/zip</entityType>
+    </otherEntity>
+    <otherEntity scope="document">
+      <entityName>hab_surface_waters_mol.zip</entityName>
+      <physical>
+        <objectName>hab_surface_waters_mol.zip</objectName>
+        <size>2328749</size>
+        <dataFormat>
+          <externallyDefinedFormat>
+            <formatName>ESRI Arc/View ShapeFile</formatName>
+          </externallyDefinedFormat>
+        </dataFormat>
+        <distribution>
+          <online>
+            <url>https://knb.ecoinformatics.org/knb/d1/mn/v1/hab_surface_waters_mol_20150511172549</url>
+          </online>
+        </distribution>
+      </physical>
+      <entityType>application/zip</entityType>
+    </otherEntity>
+    <otherEntity scope="document">
+      <entityName>hab_suspension_reef_mol.zip</entityName>
+      <physical>
+        <objectName>hab_suspension_reef_mol.zip</objectName>
+        <size>2265150</size>
+        <dataFormat>
+          <externallyDefinedFormat>
+            <formatName>ESRI Arc/View ShapeFile</formatName>
+          </externallyDefinedFormat>
+        </dataFormat>
+        <distribution>
+          <online>
+            <url>https://knb.ecoinformatics.org/knb/d1/mn/v1/hab_suspension_reef_mol_20150511172550</url>
+          </online>
+        </distribution>
+      </physical>
+      <entityType>application/zip</entityType>
+    </otherEntity>
+    <otherEntity scope="document">
+      <entityName>habitat_num_mol.zip</entityName>
+      <physical>
+        <objectName>habitat_num_mol.zip</objectName>
+        <size>11942376</size>
+        <dataFormat>
+          <externallyDefinedFormat>
+            <formatName>ESRI Arc/View ShapeFile</formatName>
+          </externallyDefinedFormat>
+        </dataFormat>
+        <distribution>
+          <online>
+            <url>https://knb.ecoinformatics.org/knb/d1/mn/v1/habitat_num_mol_20150511172553</url>
+          </online>
+        </distribution>
+      </physical>
+      <entityType>application/zip</entityType>
+    </otherEntity>
+    <otherEntity scope="document">
+      <entityName>ocean_mask_mol.zip</entityName>
+      <physical>
+        <objectName>ocean_mask_mol.zip</objectName>
+        <size>2418321</size>
+        <dataFormat>
+          <externallyDefinedFormat>
+            <formatName>ESRI Arc/View ShapeFile</formatName>
+          </externallyDefinedFormat>
+        </dataFormat>
+        <distribution>
+          <online>
+            <url>https://knb.ecoinformatics.org/knb/d1/mn/v1/ocean_mask_mol_20150511172555</url>
+          </online>
+        </distribution>
+      </physical>
+      <entityType>application/zip</entityType>
+    </otherEntity>
+    <otherEntity scope="document">
+      <entityName>vulnerability_weighting_matrix.csv</entityName>
+      <physical>
+        <objectName>vulnerability_weighting_matrix.csv</objectName>
+        <size>2851</size>
+        <dataFormat>
+          <externallyDefinedFormat>
+            <formatName>ESRI Arc/View ShapeFile</formatName>
+          </externallyDefinedFormat>
+        </dataFormat>
+        <distribution>
+          <online>
+            <url>https://knb.ecoinformatics.org/knb/d1/mn/v1/vulnerability_weighting_matrix_20150511172556.csv</url>
+          </online>
+        </distribution>
+      </physical>
+      <entityType>application/zip</entityType>
+    </otherEntity>
+  </dataset>
+</eml:eml>

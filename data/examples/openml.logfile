@@ -1,0 +1,11 @@
+--2020-05-23 00:41:51--  https://www.openml.org/api/v1/task/1
+Resolving www.openml.org... 131.155.11.11
+Connecting to www.openml.org|131.155.11.11|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 1878 (1.8K) [text/xml]
+Saving to: ‘openml.xml’
+
+     0K .                                                     100% 39.8M=0s
+
+2020-05-23 00:41:52 (39.8 MB/s) - ‘openml.xml’ saved [1878/1878]
+

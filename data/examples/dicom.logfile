@@ -1,0 +1,12 @@
+--2020-05-26 10:48:09--  https://wiki.cancerimagingarchive.net/download/attachments/19038256/TCIA_Lung_Phantom_06-22-2015.tcia?version=1
+Resolving wiki.cancerimagingarchive.net... 144.30.124.210
+Connecting to wiki.cancerimagingarchive.net|144.30.124.210|:443... connected.
+HTTP request sent, awaiting response... 200 
+Length: 5371 (5.2K) [application/x-nbia-manifest-file]
+Saving to: ‘dicom’
+
+     0K .....                                                 100% 29.3M=0s
+
+Last-modified header invalid -- time-stamp ignored.
+2020-05-26 10:48:09 (29.3 MB/s) - ‘dicom’ saved [5371/5371]
+

@@ -1,0 +1,11 @@
+--2020-05-23 10:12:42--  https://knb.ecoinformatics.org/knb/d1/mn/v2/object/doi%3A10.5063%2FF19Z92TW
+Resolving knb.ecoinformatics.org... 128.111.85.211
+Connecting to knb.ecoinformatics.org|128.111.85.211|:443... connected.
+HTTP request sent, awaiting response... 200 200
+Length: unspecified [text/xml]
+Saving to: ‘eml.xml’
+
+     0K .......... .........                                    265K=0.08s
+
+2020-05-23 10:12:43 (265 KB/s) - ‘eml.xml’ saved [20417]
+

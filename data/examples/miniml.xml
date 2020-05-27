@@ -1,0 +1,587 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<MINiML
+   xmlns="https://www.ncbi.nlm.nih.gov/geo/info/MINiML"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="https://www.ncbi.nlm.nih.gov/geo/info/MINiML https://www.ncbi.nlm.nih.gov/geo/info/MINiML.xsd"
+   version="0.5.0" >
+
+  <Contributor iid="contrib1">
+    <Person><First>Jun</First><Last>Shima</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib2">
+    <Person><First>Fumiko</First><Last>Tanaka</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib3">
+    <Person><First>Akira</First><Last>Ando</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib4">
+    <Person><First>Toshihide</First><Last>Nakamura</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib5">
+    <Person><First>Hiroshi</First><Last>Takagi</Last></Person>
+  </Contributor>
+
+  <Database iid="GEO">
+    <Name>Gene Expression Omnibus (GEO)</Name>
+    <Public-ID>GEO</Public-ID>
+    <Organization>NCBI NLM NIH</Organization>
+    <Web-Link>https://www.ncbi.nlm.nih.gov/geo</Web-Link>
+    <Email>geo@ncbi.nlm.nih.gov</Email>
+  </Database>
+
+  <Platform iid="GPL90">
+    <Accession database="GEO">GPL90</Accession>
+  </Platform>
+
+  <Sample iid="Sample1">
+    <Title>
+before fermentation
+    </Title>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>mRNA T128</Source>
+      <Organism>Saccharomyces cerevisiae</Organism>
+      <Characteristics>
+Typical commercial baker's yeast used in Japan
+      </Characteristics>
+      <Treatment-Protocol>
+ Cell pellets (11,700 OD units) were suspended in 390 ml of LF medium in a 500-ml flask and then fermented at 30C for 300 min.To investigate gene expression profiles during initial stages of dough-fermentation, cell samples for DNA microarray analysis were obtained from each culture medium at 15 min, 30 min, and 60 min.(shima_15, shima_30, shima_60)
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Mini-scale fed-batch pre-cultivation was done using a jar fermentor (1-liter, B. E. Marubishi, Japan) and peristaltic pump (EYELA, Japan) with a sequential controller (B. E. Marubishi). After 18 h cultivation, cells in stationary phase were collected by centrifugation (2,700g for 5 min). Some of the cell pellets were suspended in 900 ml of sterilized water (4C). Cells for no-fermentation control were harvested after the fed-butch cultivation and stored at -80C until RNA extraction. (shima_0)
+      </Growth-Protocol>
+      <Molecule>polyA RNA</Molecule>
+      <Extract-Protocol>
+Each time samples of total RNA were extracted using the hot phenol method. Poly (A)+ RNA was isolated from the total RNA by using an Oligotex dt30 (super) mRNA purification kit (Takara, Japan) according to the manufacturer's instructions. Yeast genome arrays (YGS98 GeneChip, Affymetrix, Santa Clara, CA) were used as DNA microarrays in this study. 
+      </Extract-Protocol>
+      <Label>Biotin</Label>
+      <Label-Protocol>
+Labeling was done according to the Affymetrix GeneChip Expression Analysis Technical Manual.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+DNA microarray hybridization was done according to the Affymetrix GeneChip Expression Analysis Technical Manual. In brief, hybridization was at 45C in a hybridization oven (model 640, Affymetrix) at 60 rpm for 16 h. The EukGE-WS2v4 fluidics protocol of the Affymetrix Microarray Suite Version 5.0 (MASv5.0) software was used to perform staining and washing procedures. 
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+The arrays were subsequently read using a GeneArray Scanner (Agilent technologies, Palo Alto, CA). 
+    </Scan-Protocol>
+    <Description>
+before fermentation
+    </Description>
+    <Data-Processing>
+Affymetrix Microarray Suite Version 5.0
+    </Data-Processing>
+    <Platform-Ref ref="GPL90" />    
+    <Supplementary-Data type="CEL">
+Sample1.cel
+    </Supplementary-Data>
+    <Supplementary-Data type="EXP">
+Sample1.exp
+    </Supplementary-Data>    
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>0min</Description>
+      </Column>
+      <Column position="3">
+        <Name>ABS_CALL</Name>
+        <Description>flag</Description>
+      </Column>
+      <Internal-Data rows="20">
+11378_at	2.7	A
+11379_at	1271.1	P
+11380_at	172.2	P
+11381_at	45.1	A
+11382_at	17.2	A
+11383_at	3.7	A
+11384_at	18.5	A
+11385_s_at	819.8	P
+11386_at	4733.9	P
+11387_at	695.5	P
+11388_at	4420.3	P
+11389_at	383.8	P
+11390_at	24.3	A
+11391_at	22.6	A
+11392_at	210.9	P
+11393_at	186.7	P
+11356_at	5778.8	P
+11357_at	1450.1	P
+11358_at	227.3	P
+11359_at	1273.6	P
+      </Internal-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="Sample2">
+    <Title>
+before fermentation 2
+    </Title>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>mRNA T128</Source>
+      <Organism>Saccharomyces cerevisiae</Organism>
+      <Characteristics>
+Typical commercial baker's yeast used in Japan
+      </Characteristics>
+      <Treatment-Protocol>
+ Cell pellets (11,700 OD units) were suspended in 390 ml of LF medium in a 500-ml flask and then fermented at 30C for 300 min.To investigate gene expression profiles during initial stages of dough-fermentation, cell samples for DNA microarray analysis were obtained from each culture medium at 15 min, 30 min, and 60 min.(after_15min, after_30min, after_60min)
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Mini-scale fed-batch pre-cultivation was done using a jar fermentor (1-liter, B. E. Marubishi, Japan) and peristaltic pump (EYELA, Japan) with a sequential controller (B. E. Marubishi). After 18 h cultivation, cells in stationary phase were collected by centrifugation (2,700g for 5 min). Some of the cell pellets were suspended in 900 ml of sterilized water (4C). Cells for no-fermentation control were harvested after the fed-butch cultivation and stored at -80C until RNA extraction. (before_fermentation)
+      </Growth-Protocol>
+      <Molecule>polyA RNA</Molecule>
+      <Extract-Protocol>
+Each time samples of total RNA were extracted using the hot phenol method. Poly (A)+ RNA was isolated from the total RNA by using an Oligotex dt30 (super) mRNA purification kit (Takara, Japan) according to the manufacturer's instructions. Yeast genome arrays (YGS98 GeneChip, Affymetrix, Santa Clara, CA) were used as DNA microarrays in this study. 
+      </Extract-Protocol>
+      <Label>Biotin</Label>
+      <Label-Protocol>
+Labeling was done according to the Affymetrix GeneChip Expression Analysis Technical Manual.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+DNA microarray hybridization was done according to the Affymetrix GeneChip Expression Analysis Technical Manual. In brief, hybridization was at 45C in a hybridization oven (model 640, Affymetrix) at 60 rpm for 16 h. The EukGE-WS2v4 fluidics protocol of the Affymetrix Microarray Suite Version 5.0 (MASv5.0) software was used to perform staining and washing procedures. 
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+The arrays were subsequently read using a GeneArray Scanner (Agilent technologies, Palo Alto, CA). 
+    </Scan-Protocol>
+    <Description>
+before fermentation (replicate)
+    </Description>
+    <Data-Processing>
+Affymetrix Microarray Suite Version 5.0
+    </Data-Processing>
+    <Platform-Ref ref="GPL90" />    
+    <Supplementary-Data type="CEL">
+Sample2.cel
+    </Supplementary-Data>
+    <Supplementary-Data type="EXP">
+Sample2.exp
+    </Supplementary-Data>    
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>before_fermentation_2</Description>
+      </Column>
+      <Column position="3">
+        <Name>ABS_CALL</Name>
+        <Description>flag</Description>
+      </Column>
+      <Internal-Data rows="20">
+11378_at	2.7	A
+11379_at	15.5	A
+11380_at	55.9	P
+11381_at	1.5	A
+11382_at	2.7	A
+11383_at	2.2	A
+11384_at	6.6	A
+11385_s_at	175.5	P
+11386_at	73	P
+11387_at	2.7	A
+11388_at	24.8	P
+11389_at	10.8	A
+11390_at	3.3	A
+11391_at	6.5	A
+11392_at	8	A
+11393_at	22.8	A
+11356_at	40.9	P
+11357_at	20.1	A
+11358_at	10.7	A
+11359_at	20.7	A
+      </Internal-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="Sample3">
+    <Title>
+fermentation 15 min
+    </Title>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>mRNA T128</Source>
+      <Organism>Saccharomyces cerevisiae</Organism>
+      <Characteristics>
+Typical commercial baker's yeast used in Japan
+      </Characteristics>
+      <Treatment-Protocol>
+ Cell pellets (11,700 OD units) were suspended in 390 ml of LF medium in a 500-ml flask and then fermented at 30C for 300 min.To investigate gene expression profiles during initial stages of dough-fermentation, cell samples for DNA microarray analysis were obtained from each culture medium at 15 min, 30 min, and 60 min.(after_15min, after_30min, after_60min)
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Mini-scale fed-batch pre-cultivation was done using a jar fermentor (1-liter, B. E. Marubishi, Japan) and peristaltic pump (EYELA, Japan) with a sequential controller (B. E. Marubishi). After 18 h cultivation, cells in stationary phase were collected by centrifugation (2,700g for 5 min). Some of the cell pellets were suspended in 900 ml of sterilized water (4C). Cells for no-fermentation control were harvested after the fed-butch cultivation and stored at -80C until RNA extraction. (before_fermentation)
+      </Growth-Protocol>
+      <Molecule>polyA RNA</Molecule>
+      <Extract-Protocol>
+Each time samples of total RNA were extracted using the hot phenol method. Poly (A)+ RNA was isolated from the total RNA by using an Oligotex dt30 (super) mRNA purification kit (Takara, Japan) according to the manufacturer's instructions. Yeast genome arrays (YGS98 GeneChip, Affymetrix, Santa Clara, CA) were used as DNA microarrays in this study. 
+      </Extract-Protocol>
+      <Label>Biotin</Label>
+      <Label-Protocol>
+Labeling was done according to the Affymetrix GeneChip Expression Analysis Technical Manual.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+DNA microarray hybridization was done according to the Affymetrix GeneChip Expression Analysis Technical Manual. In brief, hybridization was at 45C in a hybridization oven (model 640, Affymetrix) at 60 rpm for 16 h. The EukGE-WS2v4 fluidics protocol of the Affymetrix Microarray Suite Version 5.0 (MASv5.0) software was used to perform staining and washing procedures. 
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+The arrays were subsequently read using a GeneArray Scanner (Agilent technologies, Palo Alto, CA). 
+    </Scan-Protocol>
+    <Description>
+fermentation 15min
+    </Description>
+    <Data-Processing>
+Affymetrix Microarray Suite Version 5.0
+    </Data-Processing>
+    <Platform-Ref ref="GPL90" />    
+    <Supplementary-Data type="CEL">
+Sample3.cel
+    </Supplementary-Data>
+    <Supplementary-Data type="EXP">
+Sample3.exp
+    </Supplementary-Data>    
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>15min</Description>
+      </Column>
+      <Column position="3">
+        <Name>ABS_CALL</Name>
+        <Description>flag</Description>
+      </Column>
+      <Internal-Data rows="20">
+11378_at	2	A
+11379_at	307.7	P
+11380_at	24.1	P
+11381_at	22.3	A
+11382_at	1.9	A
+11383_at	1.6	A
+11384_at	8.5	A
+11385_s_at	476.2	P
+11386_at	554.1	P
+11387_at	37.2	A
+11388_at	439.1	P
+11389_at	556.5	P
+11390_at	23.3	A
+11391_at	20.2	A
+11392_at	1.3	A
+11393_at	11.8	A
+11356_at	238.3	P
+11357_at	407.6	P
+11358_at	42	P
+11359_at	66.9	P
+      </Internal-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="Sample4">
+    <Title>
+fermentation 15 min 2
+    </Title>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>mRNA T128</Source>
+      <Organism>Saccharomyces cerevisiae</Organism>
+      <Characteristics>
+Typical commercial baker's yeast used in Japan
+      </Characteristics>
+      <Treatment-Protocol>
+ Cell pellets (11,700 OD units) were suspended in 390 ml of LF medium in a 500-ml flask and then fermented at 30C for 300 min.To investigate gene expression profiles during initial stages of dough-fermentation, cell samples for DNA microarray analysis were obtained from each culture medium at 15 min, 30 min, and 60 min.(after_15min, after_30min, after_60min)
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Mini-scale fed-batch pre-cultivation was done using a jar fermentor (1-liter, B. E. Marubishi, Japan) and peristaltic pump (EYELA, Japan) with a sequential controller (B. E. Marubishi). After 18 h cultivation, cells in stationary phase were collected by centrifugation (2,700g for 5 min). Some of the cell pellets were suspended in 900 ml of sterilized water (4C). Cells for no-fermentation control were harvested after the fed-butch cultivation and stored at -80C until RNA extraction. (before_fermentation)
+      </Growth-Protocol>
+      <Molecule>polyA RNA</Molecule>
+      <Extract-Protocol>
+Each time samples of total RNA were extracted using the hot phenol method. Poly (A)+ RNA was isolated from the total RNA by using an Oligotex dt30 (super) mRNA purification kit (Takara, Japan) according to the manufacturer's instructions. Yeast genome arrays (YGS98 GeneChip, Affymetrix, Santa Clara, CA) were used as DNA microarrays in this study. 
+      </Extract-Protocol>
+      <Label>Biotin</Label>
+      <Label-Protocol>
+Labeling was done according to the Affymetrix GeneChip Expression Analysis Technical Manual.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+DNA microarray hybridization was done according to the Affymetrix GeneChip Expression Analysis Technical Manual. In brief, hybridization was at 45C in a hybridization oven (model 640, Affymetrix) at 60 rpm for 16 h. The EukGE-WS2v4 fluidics protocol of the Affymetrix Microarray Suite Version 5.0 (MASv5.0) software was used to perform staining and washing procedures. 
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+The arrays were subsequently read using a GeneArray Scanner (Agilent technologies, Palo Alto, CA). 
+    </Scan-Protocol>
+    <Description>
+fermentation 15min (replicate)
+    </Description>
+    <Data-Processing>
+Affymetrix Microarray Suite Version 5.0
+    </Data-Processing>
+    <Platform-Ref ref="GPL90" />    
+    <Supplementary-Data type="CEL">
+Sample4.cel
+    </Supplementary-Data>
+    <Supplementary-Data type="EXP">
+Sample4.exp
+    </Supplementary-Data>    
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>15min</Description>
+      </Column>
+      <Column position="3">
+        <Name>ABS_CALL</Name>
+        <Description>flag</Description>
+      </Column>
+      <Internal-Data rows="20">
+11378_at	6.1	A
+11379_at	4.6	A
+11380_at	9.2	A
+11381_at	2.8	A
+11382_at	12.5	A
+11383_at	5.7	A
+11384_at	14.2	A
+11385_s_at	59.9	P
+11386_at	34.6	A
+11387_at	12.1	A
+11388_at	55.4	P
+11389_at	167.9	A
+11390_at	4.2	A
+11391_at	49.2	A
+11392_at	3	A
+11393_at	17.7	A
+11356_at	24.3	A
+11357_at	86.6	P
+11358_at	32.1	A
+11359_at	5.8	A
+      </Internal-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="Sample5">
+    <Title>
+fermentation 30 min
+    </Title>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>mRNA T128</Source>
+      <Organism>Saccharomyces cerevisiae</Organism>
+      <Characteristics>
+Typical commercial baker's yeast used in Japan
+      </Characteristics>
+      <Treatment-Protocol>
+ Cell pellets (11,700 OD units) were suspended in 390 ml of LF medium in a 500-ml flask and then fermented at 30C for 300 min.To investigate gene expression profiles during initial stages of dough-fermentation, cell samples for DNA microarray analysis were obtained from each culture medium at 15 min, 30 min, and 60 min.(after_15min, after_30min, after_60min)
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Mini-scale fed-batch pre-cultivation was done using a jar fermentor (1-liter, B. E. Marubishi, Japan) and peristaltic pump (EYELA, Japan) with a sequential controller (B. E. Marubishi). After 18 h cultivation, cells in stationary phase were collected by centrifugation (2,700g for 5 min). Some of the cell pellets were suspended in 900 ml of sterilized water (4C). Cells for no-fermentation control were harvested after the fed-butch cultivation and stored at -80C until RNA extraction. (before_fermentation)
+      </Growth-Protocol>
+      <Molecule>polyA RNA</Molecule>
+      <Extract-Protocol>
+Each time samples of total RNA were extracted using the hot phenol method. Poly (A)+ RNA was isolated from the total RNA by using an Oligotex dt30 (super) mRNA purification kit (Takara, Japan) according to the manufacturer's instructions. Yeast genome arrays (YGS98 GeneChip, Affymetrix, Santa Clara, CA) were used as DNA microarrays in this study. 
+      </Extract-Protocol>
+      <Label>Biotin</Label>
+      <Label-Protocol>
+Labeling was done according to the Affymetrix GeneChip Expression Analysis Technical Manual.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+DNA microarray hybridization was done according to the Affymetrix GeneChip Expression Analysis Technical Manual. In brief, hybridization was at 45C in a hybridization oven (model 640, Affymetrix) at 60 rpm for 16 h. The EukGE-WS2v4 fluidics protocol of the Affymetrix Microarray Suite Version 5.0 (MASv5.0) software was used to perform staining and washing procedures. 
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+The arrays were subsequently read using a GeneArray Scanner (Agilent technologies, Palo Alto, CA). 
+    </Scan-Protocol>
+    <Description>
+fermentation 30min
+    </Description>
+    <Data-Processing>
+Affymetrix Microarray Suite Version 5.0
+    </Data-Processing>
+    <Platform-Ref ref="GPL90" />    
+    <Supplementary-Data type="CEL">
+Sample5.cel
+    </Supplementary-Data>
+    <Supplementary-Data type="EXP">
+Sample5.exp
+    </Supplementary-Data>    
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>30min</Description>
+      </Column>
+      <Column position="3">
+        <Name>ABS_CALL</Name>
+        <Description>flag</Description>
+      </Column>
+      <Internal-Data rows="20">
+11378_at	3.8	A
+11379_at	185.7	P
+11380_at	15.3	P
+11381_at	119.7	P
+11382_at	4	A
+11383_at	1.5	A
+11384_at	8.6	A
+11385_s_at	1667.8	P
+11386_at	220.4	P
+11387_at	15.5	A
+11388_at	307.1	P
+11389_at	510.1	P
+11390_at	39.9	A
+11391_at	19.1	P
+11392_at	4.6	A
+11393_at	16.6	A
+11356_at	22.4	A
+11357_at	140.2	P
+11358_at	34.6	P
+11359_at	62.8	P
+      </Internal-Data>
+    </Data-Table>
+  </Sample>
+  <Sample iid="Sample6">
+    <Title>
+fermentation 60 min
+    </Title>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>mRNA T128</Source>
+      <Organism>Saccharomyces cerevisiae</Organism>
+      <Characteristics>
+Typical commercial baker's yeast used in Japan
+      </Characteristics>
+      <Treatment-Protocol>
+ Cell pellets (11,700 OD units) were suspended in 390 ml of LF medium in a 500-ml flask and then fermented at 30C for 300 min.To investigate gene expression profiles during initial stages of dough-fermentation, cell samples for DNA microarray analysis were obtained from each culture medium at 15 min, 30 min, and 60 min.(after_15min, after_30min, after_60min)
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Mini-scale fed-batch pre-cultivation was done using a jar fermentor (1-liter, B. E. Marubishi, Japan) and peristaltic pump (EYELA, Japan) with a sequential controller (B. E. Marubishi). After 18 h cultivation, cells in stationary phase were collected by centrifugation (2,700g for 5 min). Some of the cell pellets were suspended in 900 ml of sterilized water (4C). Cells for no-fermentation control were harvested after the fed-butch cultivation and stored at -80C until RNA extraction. (before_fermentation)
+      </Growth-Protocol>
+      <Molecule>polyA RNA</Molecule>
+      <Extract-Protocol>
+Each time samples of total RNA were extracted using the hot phenol method. Poly (A)+ RNA was isolated from the total RNA by using an Oligotex dt30 (super) mRNA purification kit (Takara, Japan) according to the manufacturer's instructions. Yeast genome arrays (YGS98 GeneChip, Affymetrix, Santa Clara, CA) were used as DNA microarrays in this study. 
+      </Extract-Protocol>
+      <Label>Biotin</Label>
+      <Label-Protocol>
+Labeling was done according to the Affymetrix GeneChip Expression Analysis Technical Manual.
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+DNA microarray hybridization was done according to the Affymetrix GeneChip Expression Analysis Technical Manual. In brief, hybridization was at 45C in a hybridization oven (model 640, Affymetrix) at 60 rpm for 16 h. The EukGE-WS2v4 fluidics protocol of the Affymetrix Microarray Suite Version 5.0 (MASv5.0) software was used to perform staining and washing procedures. 
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+The arrays were subsequently read using a GeneArray Scanner (Agilent technologies, Palo Alto, CA). 
+    </Scan-Protocol>
+    <Description>
+fermentation 60min
+    </Description>
+    <Data-Processing>
+Affymetrix Microarray Suite Version 5.0
+    </Data-Processing>
+    <Platform-Ref ref="GPL90" />    
+    <Supplementary-Data type="CEL">
+Sample6.cel
+    </Supplementary-Data>
+    <Supplementary-Data type="EXP">
+Sample6.exp
+    </Supplementary-Data>    
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>60min</Description>
+      </Column>
+      <Column position="3">
+        <Name>ABS_CALL</Name>
+        <Description>flag</Description>
+      </Column>
+      <Internal-Data rows="20">
+11378_at	8	A
+11379_at	421.2	P
+11380_at	77	P
+11381_at	65.5	P
+11382_at	2.3	A
+11383_at	3.3	A
+11384_at	41.4	M
+11385_s_at	900.7	P
+11386_at	338.6	P
+11387_at	32.7	A
+11388_at	916.8	P
+11389_at	536.3	P
+11390_at	56.3	A
+11391_at	40.1	A
+11392_at	18.9	A
+11393_at	27.5	A
+11356_at	271.4	P
+11357_at	200.3	P
+11358_at	60.4	P
+11359_at	455.1	P
+      </Internal-Data>
+    </Data-Table>
+  </Sample>
+
+  <Series iid="ExperimentA">
+    <Title>
+Functional Genomic Analysis of Commercial Baker's Yeast during Initial Stages of Model Dough-Fermentation
+    </Title>
+    <Summary>
+Gene expression profiles of baker's yeast during initial dough-fermentation were investigated using liquid fermentation media to obtain insights at the molecular level into rapid adaptation mechanisms of baker's yeast. Results showed that onset of fermentation caused drastic changes in gene expression profiles within 15 min. Genes involved in the tricarboxylic acid (TCA) cycle were down-regulated and genes involved in glycolysis were up-regulated, indicating a metabolic shift from respiration to fermentation. Genes involved in ethanol production (PDC genes and ADH1), in glycerol synthesis (GPD1 and HOR2), and in low-affinity hexose transporters (HXT1 and HXT3) were up-regulated at the beginning of model dough-fermentation. Among genes up-regulated at 15 min, several genes classified as transcription were down-regulated within 30 min. These down-regulated genes are involved in messenger RNA splicing and ribosomal protein biogenesis, in zinc finger transcription factor proteins, and in transcriptional regulator (SRB8, MIG1). In contrast, genes involved in amino acid metabolism and in vitamin metabolism, such as arginine biosynthesis, riboflavin biosynthesis, and thiamin biosynthesis, were subsequently up-regulated after 30 min. Interestingly, the genes involved in the unfolded protein response (UPR) pathway were also subsequently up-regulated. Our study presents the first overall description of the transcriptional response of baker's yeast during dough-fermentation, and will thus help clarify genomic responses to various stresses during commercial fermentation processes.
+    </Summary>
+    <Overall-Design>
+Saccharomyces cerevisiae T128 was used as a model of typical commercial baker's yeast used in Japan. After 18 h cultivation, cells in stationary phase were collected by centrifugation (2,700g for 5 min). Some of the cell pellets were suspended in 900 ml of sterilized water. Cells for no-fermentation control were harvested after the fed-butch cultivation and stored until RNA extraction. Cell pellets (11,700 OD units) were suspended in 390 ml of lequid fermentation (LF) medium in a 500-ml flask and then fermented for 300 min. To investigate gene expression profiles during initial stages of dough-fermentation, cell samples for DNA microarray analysis were obtained from each culture medium at 15 min, 30 min, and 60 min. Cells in stationary phase were then collected by centrifugation (2700 G for 5 min), and stored until RNA extraction.
+    </Overall-Design>
+    <Type>fermentation</Type>
+    <Contributor-Ref ref="contrib2" position="1" />
+    <Contributor-Ref ref="contrib3" position="2" />
+    <Contributor-Ref ref="contrib4" position="3" />
+    <Contributor-Ref ref="contrib5" position="4" />
+    <Contributor-Ref ref="contrib1" position="5" />
+    <Sample-Ref ref="Sample1" />
+    <Sample-Ref ref="Sample2" />
+    <Sample-Ref ref="Sample3" />
+    <Sample-Ref ref="Sample4" />
+    <Sample-Ref ref="Sample5" />
+    <Sample-Ref ref="Sample6" />    
+    <Variable position="0">
+      <Factor>time</Factor>
+      <Description>
+before fermentation
+      </Description>
+      <Sample-Ref ref="Sample1" />
+      <Sample-Ref ref="Sample2" />
+    </Variable>
+    <Variable position="1">
+      <Factor>time</Factor>
+      <Description>
+fermentation 15 min
+      </Description>
+      <Sample-Ref ref="Sample3" />
+      <Sample-Ref ref="Sample4" />
+    </Variable>
+    <Variable position="2">
+      <Factor>time</Factor>
+      <Description>
+fermentation 30 min
+      </Description>
+      <Sample-Ref ref="Sample5" />
+    </Variable>
+    <Variable position="3">
+      <Factor>time</Factor>
+      <Description>
+fermentation 60 min
+      </Description>
+      <Sample-Ref ref="Sample6" />
+    </Variable>
+
+  </Series>
+
+</MINiML>
