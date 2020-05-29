@@ -6,7 +6,7 @@ library(rvest)
 library(readxl)
 library(stringr)
 
-#try to parse the github repo as it is now
+#try to parse the github repo as it is now vs a commit we know will work
 useLive<-TRUE
 if(useLive){
   url<-"https://raw.githubusercontent.com/leipzig/awesome-reproducible-research/master/readme.md"
