@@ -1,56 +1,56 @@
-Standard	Layer	Publication	Home	Example	Encoding	Domain
-CellML	Input	10.1177/0037549703040939	https://www.cellml.org/	cellml_saucerman_brunton_michailova_mcculloch_2003.xml	XML	Biology
-CIF2	Input	10.1107/s1600576715021871	https://www.iucr.org/resources/cif/cif2		Custom	Crystallography
-DATS	Input	10.1093/gigascience/giz165	https://github.com/datatagsuite		JSON	Biomedical
-DICOM	Input	10.1148/radiographics.12.2.1561424	https://www.dicomstandard.org/	dicom	Custom	Images
-EML	Input	10.1016/j.ecoinf.2005.08.004	https://eml.ecoinformatics.org/		XML	Ecology
-FAANG	Input		https://www.ebi.ac.uk/vg/faang		Tabular	Specimens
-GBIF	Input	10.1371/journal.pone.0102623	https://www.gbif.org/		JSON	Biodiversity
-GO	Input	10.1038/75556	http://geneontology.org/		XML	Genes
-ISO/TC 276	Input		https://www.iso.org/committee/4514241.html			Biotechnology
-MIAME	Input	10.1038/ng1201-365	https://www.ncbi.nlm.nih.gov/geo/info/MIAME.html		XML	Microarrays
-NetCDF	Input	10.1109/38.56302	https://www.unidata.ucar.edu/software/netcdf/			Arrays
-OGC	Input		https://www.ogc.org/			Geospatial
-ThermoML	Input	10.1021/je034088i	https://www.nist.gov/mml/acmd/trc/thermoml		XML	Compounds
-CRAN	Tools		http://cran.r-project.org/			R packages
-Conda	Tools		https://docs.conda.io/			Dependencies
-pip	Tools		https://pypi.org/project/pip/			Python modules
-EDAM	Tools	10.1093/bioinformatics/btt113	http://edamontology.org/			Bfx data
-CodeMeta	Tools		https://codemeta.github.io/			Source code
-Biotoolsxsd	Tools	10.1093/nar/gkv1116	https://github.com/unioslo/biotoolsxsd		XML	Bfx software
-DOAP	Tools		https://github.com/ewilderj/doap		XML	Software
-ontosoft	Tools		https://www.ontosoft.org/			Geo software
-SWO	Tools	10.1186/2041-1480-5-25	https://www.ebi.ac.uk/ols/ontologies/swo			Bfx Software
-OBCS	Reports	10.1186/s13326-016-0100-2	http://www.obofoundry.org/ontology/obcs.html			Biostatistics
-STATO	Reports		http://stato-ontology.org/			Statistics
-SDMX	Reports		https://sdmx.org/		JSON	Statistics
-DDI	Reports		https://ddialliance.org/		XML	Studies
-MEX	Reports	10.1145/2814864.2814883	http://aksw.org/Projects/MEX.html		XML	ML
-MLSchema	Reports		https://github.com/ML-Schema/			ML
-MLFlow	Reports		https://mlflow.org/			ML
-Rmd	Reports		https://rmarkdown.rstudio.com/		YAML	Docs
-CWL	Pipelines				YAML	
-CWLProv	Pipelines					
-RO-Crate	Pipelines					
-RO-Crate	Pipelines					
-WICUS	Pipelines					
-OPM	Pipelines					
-PROV-O	Pipelines					
-ReproZIp	Pipelines					
-ProvOne	Pipelines					
-PAV	Pipelines					
-WES	Pipelines					
-BagIt	Pipelines					
-BCO	Pipelines					
-ERC	Pipelines					
-BEL	Publication					
-DC	Publication					
-JATS	Publication					
-ONIX	Publication					
-MeSH	Publication					
-LCSH	Publication					
-MP	Publication					
-Open PHACTS	Publication					
-SWAN	Publication					
-SPAR	Publication					
-PWO	Publication					
+Standard	Layer	Publication	Home	Example	Encoding	Schema	Domain
+CellML	Input	10.1177/0037549703040939	https://www.cellml.org/	cellml_saucerman_brunton_michailova_mcculloch_2003.xml	XML		Biology
+CIF2	Input	10.1107/s1600576715021871	https://www.iucr.org/resources/cif/cif2		Custom		Crystallography
+DATS	Input	10.1093/gigascience/giz165	https://github.com/datatagsuite		JSON		Biomedical
+DICOM	Input	10.1148/radiographics.12.2.1561424	https://www.dicomstandard.org/	dicom	Custom	Key-Value	Images
+EML	Input	10.1016/j.ecoinf.2005.08.004	https://eml.ecoinformatics.org/		XML		Ecology
+FAANG	Input		https://www.ebi.ac.uk/vg/faang		Tabular		Specimens
+GBIF	Input	10.1371/journal.pone.0102623	https://www.gbif.org/		JSON		Biodiversity
+GO	Input	10.1038/75556	http://geneontology.org/		XML		Genes
+ISO/TC 276	Input		https://www.iso.org/committee/4514241.html				Biotechnology
+MIAME	Input	10.1038/ng1201-365	https://www.ncbi.nlm.nih.gov/geo/info/MIAME.html		XML		Microarrays
+NetCDF	Input	10.1109/38.56302	https://www.unidata.ucar.edu/software/netcdf/				Arrays
+OGC	Input		https://www.ogc.org/				Geospatial
+ThermoML	Input	10.1021/je034088i	https://www.nist.gov/mml/acmd/trc/thermoml		XML		Compounds
+CRAN	Tools		http://cran.r-project.org/				R packages
+Conda	Tools		https://docs.conda.io/				Dependencies
+pip	Tools		https://pypi.org/project/pip/				Python modules
+EDAM	Tools	10.1093/bioinformatics/btt113	http://edamontology.org/				Bfx data
+CodeMeta	Tools		https://codemeta.github.io/				Source code
+Biotoolsxsd	Tools	10.1093/nar/gkv1116	https://github.com/unioslo/biotoolsxsd		XML		Bfx software
+DOAP	Tools		https://github.com/ewilderj/doap		XML		Software
+ontosoft	Tools		https://www.ontosoft.org/				Geo software
+SWO	Tools	10.1186/2041-1480-5-25	https://www.ebi.ac.uk/ols/ontologies/swo				Bfx Software
+OBCS	Reports	10.1186/s13326-016-0100-2	http://www.obofoundry.org/ontology/obcs.html				Biostatistics
+STATO	Reports		http://stato-ontology.org/				Statistics
+SDMX	Reports		https://sdmx.org/		JSON		Statistics
+DDI	Reports		https://ddialliance.org/		XML		Studies
+MEX	Reports	10.1145/2814864.2814883	http://aksw.org/Projects/MEX.html		XML		ML
+MLSchema	Reports		https://github.com/ML-Schema/				ML
+MLFlow	Reports		https://mlflow.org/				ML
+Rmd	Reports		https://rmarkdown.rstudio.com/		YAML	Key-Value	Docs
+CWL	Pipelines	10.6084/m9.figshare.3115156.v2	https://www.commonwl.org/		YAML		
+CWLProv	Pipelines	10.1093/gigascience/giz095	https://github.com/common-workflow-language/cwlprov				
+RO-Crate	Pipelines		https://researchobject.github.io/ro-crate/1.0/				
+RO	Pipelines		http://www.researchobject.org/				
+WICUS	Pipelines		http://vocab.linkeddata.es/wicus/wicus/				
+OPM	Pipelines		https://openprovenance.org/opm/				
+PROV-O	Pipelines		https://www.w3.org/TR/prov-o/				
+ReproZIp	Pipelines		https://www.reprozip.org/				
+ProvOne	Pipelines		https://purl.dataone.org/provone-v1-dev				
+WES	Pipelines						
+BagIt	Pipelines		https://tools.ietf.org/html/rfc8493				
+BCO	Pipelines						
+ERC	Pipelines	10.5281/zenodo.2203844	https://o2r.info/erc-spec/		YAML	Key-Value	Research Compendia
+BEL	Publication						
+DC	Publication						
+JATS	Publication		https://jats.nlm.nih.gov/		XML	Tags DTD	Articles
+ONIX	Publication						
+MeSH	Publication						
+LCSH	Publication						
+MP	Publication						
+Open PHACTS	Publication						
+SWAN	Publication						
+SPAR	Publication						
+PWO	Publication						
+PAV	Publication	10.1186/2041-1480-4-37			XML	RDF	Authorship
