@@ -2,6 +2,25 @@
 This is a supplemental resource to Leipzig et al. "The Role of Metadata in Reproducible Computational Research"
 
 ## Organization
+```
+├───data/
+│   ├───examples/                  Examples of metadata standards
+│   ├───lens/                      Search exports for scimetric journal analysis
+│   └───standards.tsv.txt          Raw standards table
+├───src/
+│   ├───secrets/
+│   │   └───api.template.py        Replace this with api.py using your NCBI/NCBO keys
+│   ├───ncbo_ontologies.py         Scimetric ontology popularity analysis
+│   ├───scimetric.ipynb            Scimetric journal meta/rcr frequency analysis
+│   ├───timeline.R                 Produces the RCR case study timeline in the paper
+│   ├───wget2jsonld.py             Helper script to convert wget output to jsonld
+│   └───wordcloud.R                Produces word cloud from cited abstracts
+├───LICENSE                        The LICENSE file
+├───README.md                      What you are looking at
+├───environment.osx.yaml           OSX pinned Conda depenencies
+├───environment.unpinned.yaml      Unpinned Conda depenencies
+└───ro-crate-metadata.jsonld       RO Crate config
+```
 <!--tree_placeholder-->
 
 ## Examples of RCR metadata standards
