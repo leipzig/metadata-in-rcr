@@ -48,9 +48,9 @@ JATS	Publication		https://jats.nlm.nih.gov/		XML	Tags DTD	Articles
 ONIX	Publication						
 MeSH	Publication						
 LCSH	Publication						
-MP	Publication						
-Open PHACTS	Publication						
-SWAN	Publication						
-SPAR	Publication						
-PWO	Publication						
-PAV	Publication	10.1186/2041-1480-4-37			XML	RDF	Authorship
+MP	Publication	10.1186/2041-1480-5-28				OWL	Micropublications
+Open PHACTS	Publication	10.1016/j.drudis.2012.05.016	https://www.openphacts.org/			RDF/XML	Drugs
+SWAN	Publication	10.1016/j.jbi.2008.04.010					Neuromedicine
+SPAR	Publication		http://www.sparontologies.net/			OWL	Publishing
+PWO	Publication	10.3233/SW-160230					Publishing
+PAV	Publication	10.1186/2041-1480-4-37			XML	RDF/XML	Authorship
