@@ -60,7 +60,6 @@ https://stackoverflow.com/questions/1740341/what-is-the-difference-between-rdf-a
 
 ## How to generate figures for this article
 
-`src/
 ```
 TODO: CWL workflow, Dockerfile, Conda reqs
 ```
