@@ -1,0 +1,1018 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<MINiML
+   xmlns="http://www.ncbi.nlm.nih.gov/geo/info/MINiML"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://www.ncbi.nlm.nih.gov/geo/info/MINiML http://www.ncbi.nlm.nih.gov/geo/info/MINiML.xsd"
+   version="0.5.0" >
+
+  <Contributor iid="contrib1">
+    <Person><First>Michelle</First><Middle>Ann</Middle><Last>Gill</Last></Person>
+    <Department>Pediatrics</Department>
+    <Organization>University of Texas Southwestern Medical Center</Organization>
+    <Address>
+      <Line>5323 Harry Hines Blvd</Line>
+      <City>Dallas</City>
+      <Zip-Code>75390</Zip-Code>
+      <Country>USA</Country>
+    </Address>
+  </Contributor>
+
+  <Contributor iid="contrib2">
+    <Organization>Illumina Inc.</Organization>
+    <Email>expression@illumina.com, techsupport@illumina.com</Email>
+    <Phone>1 800 809 4566 </Phone>
+    <Organization>Illumina Inc.</Organization>
+    <Address>
+      <Line>9885 Towne Centre Drive</Line>
+      <City>San Diego</City>
+      <State>CA</State>
+      <Zip-Code>92121</Zip-Code>
+      <Country>USA</Country>
+    </Address>
+    <Web-Link>www.illumina.com</Web-Link>
+  </Contributor>
+
+  <Contributor iid="contrib3">
+    <Person><First>Gagan</First><Last>Bajwa</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib4">
+    <Person><First>Michelle</First><Middle>A</Middle><Last>Gill</Last></Person>
+  </Contributor>
+
+  <Database iid="GEO">
+    <Name>Gene Expression Omnibus (GEO)</Name>
+    <Public-ID>GEO</Public-ID>
+    <Organization>NCBI NLM NIH</Organization>
+    <Web-Link>http://www.ncbi.nlm.nih.gov/geo</Web-Link>
+    <Email>geo@ncbi.nlm.nih.gov</Email>
+  </Database>
+
+  <Platform iid="GPL10558">
+    <Status database="GEO">
+      <Submission-Date>2010-06-17</Submission-Date>
+      <Release-Date>2010-06-17</Release-Date>
+      <Last-Update-Date>2020-03-04</Last-Update-Date>
+    </Status>
+    <Title>Illumina HumanHT-12 V4.0 expression beadchip</Title>
+    <Accession database="GEO">GPL10558</Accession>
+    <Technology>oligonucleotide beads</Technology>
+    <Distribution>commercial</Distribution>
+    <Organism taxid="9606">Homo sapiens</Organism>
+    <Manufacturer>Illumina Inc.</Manufacturer>
+    <Manufacture-Protocol>
+see manufacturer's website
+    </Manufacture-Protocol>
+    <Description>
+The HumanHT-12 v4 Expression BeadChip provides high throughput processing of 12 samples per BeadChip without the need for expensive, specialized automation. The BeadChip is designed to support flexible usage across a wide-spectrum of experiments.
+
+The updated content on the HumanHT-12 v4 Expression BeadChips provides more biologically meaningful results through genome-wide transcriptional coverage of well-characterized genes, gene candidates, and splice variants.
+
+Each array on the HumanHT-12 v4 Expression BeadChip targets more than 31,000 annotated genes with more than 47,000 probes derived from the National Center for Biotechnology Information Reference Sequence (NCBI) RefSeq Release 38 (November 7, 2009) and other sources.
+
+Please use the GEO Data Submission Report Plug-in v1.0 for Gene Expression which may be downloaded from https://icom.illumina.com/icom/software.ilmn?id=234 to format the normalized and raw data.  These should be submitted as part of a GEOarchive.  Instructions for assembling a GEOarchive may be found at http://www.ncbi.nlm.nih.gov/projects/geo/info/spreadsheet.html
+
+October 11, 2012: annotation table updated with HumanHT-12_V4_0_R2_15002873_B.txt
+    </Description>
+    <Contact-Ref ref="contrib2" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nlm.nih.gov/geo/platforms/GPL10nnn/GPL10558/suppl/GPL10558_HumanHT-12_V4_0_R1_15002873_B.txt.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nlm.nih.gov/geo/platforms/GPL10nnn/GPL10558/suppl/GPL10558_HumanHT-12_V4_0_R2_15002873_B.txt.gz
+    </Supplementary-Data>
+    <Relation type="Alternative to" target="GPL10904" />
+    <Relation type="Alternative to" target="GPL22366" comment="alternative" />
+    <Data-Table>
+      <Column position="1">
+        <Name>ID</Name>
+        <Description>Unique identifier for the probe (across all products and species)</Description>
+      </Column>
+      <Column position="2">
+        <Name>Species</Name>
+      </Column>
+      <Column position="3">
+        <Name>Source</Name>
+        <Description>Transcript sequence source name</Description>
+      </Column>
+      <Column position="4">
+        <Name>Search_Key</Name>
+        <Description>Internal id useful for custom design array</Description>
+      </Column>
+      <Column position="5">
+        <Name>Transcript</Name>
+        <Description>Internal transcript id</Description>
+      </Column>
+      <Column position="6">
+        <Name>ILMN_Gene</Name>
+        <Description>Internal gene symbol</Description>
+      </Column>
+      <Column position="7">
+        <Name>Source_Reference_ID</Name>
+        <Description>Id in the source database</Description>
+      </Column>
+      <Column position="8">
+        <Name>RefSeq_ID</Name>
+        <Description>Refseq id</Description>
+      </Column>
+      <Column position="9">
+        <Name>Unigene_ID</Name>
+        <Description>Unigene id</Description>
+      </Column>
+      <Column position="10">
+        <Name>Entrez_Gene_ID</Name>
+        <Description>Entrez gene id</Description>
+      </Column>
+      <Column position="11">
+        <Name>GI</Name>
+        <Description>Genbank id</Description>
+      </Column>
+      <Column position="12">
+        <Name>Accession</Name>
+        <Description>Genbank accession number</Description>
+      </Column>
+      <Column position="13">
+        <Name>Symbol</Name>
+        <Description>Gene symbol from the source database</Description>
+      </Column>
+      <Column position="14">
+        <Name>Protein_Product</Name>
+        <Description>Genbank protein accession number</Description>
+      </Column>
+      <Column position="15">
+        <Name>Probe_Id</Name>
+      </Column>
+      <Column position="16">
+        <Name>Array_Address_Id</Name>
+        <Description>Decoder id</Description>
+      </Column>
+      <Column position="17">
+        <Name>Probe_Type</Name>
+        <Description>Information about what this probe is targeting</Description>
+      </Column>
+      <Column position="18">
+        <Name>Probe_Start</Name>
+        <Description>Position of the probe relative to the 5' of the source transcript sequence</Description>
+      </Column>
+      <Column position="19">
+        <Name>SEQUENCE</Name>
+        <Description>Probe sequence</Description>
+      </Column>
+      <Column position="20">
+        <Name>Chromosome</Name>
+        <Description>Chromosome</Description>
+      </Column>
+      <Column position="21">
+        <Name>Probe_Chr_Orientation</Name>
+        <Description>Orientation on the NCBI genome built</Description>
+      </Column>
+      <Column position="22">
+        <Name>Probe_Coordinates</Name>
+        <Description>genomic position of the probe on the NCBI genome build 36 version 3</Description>
+      </Column>
+      <Column position="23">
+        <Name>Cytoband</Name>
+      </Column>
+      <Column position="24">
+        <Name>Definition</Name>
+        <Description>Gene description from the source</Description>
+      </Column>
+      <Column position="25">
+        <Name>Ontology_Component</Name>
+        <Description>Cellular component annotations from Gene Ontology project</Description>
+      </Column>
+      <Column position="26">
+        <Name>Ontology_Process</Name>
+        <Description>Biological process annotations from Gene Ontology project</Description>
+      </Column>
+      <Column position="27">
+        <Name>Ontology_Function</Name>
+        <Description>Molecular function annotations from Gene Ontology project</Description>
+      </Column>
+      <Column position="28">
+        <Name>Synonyms</Name>
+        <Description>Gene symbol synonyms from Refseq</Description>
+      </Column>
+      <Column position="29">
+        <Name>Obsolete_Probe_Id</Name>
+        <Description>Identifier of probe id before bgx time</Description>
+      </Column>
+      <Column position="30">
+        <Name>GB_ACC</Name>
+      </Column>
+    <External-Data rows="48107">
+GPL10558-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Platform>
+
+  <Sample iid="GSM1684095">
+    <Status database="GEO">
+      <Submission-Date>2015-05-13</Submission-Date>
+      <Release-Date>2016-02-01</Release-Date>
+      <Last-Update-Date>2016-02-01</Last-Update-Date>
+    </Status>
+    <Title>Donor 1 - No virus control   - 8h</Title>
+    <Accession database="GEO">GSM1684095</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Blood pDCs</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="donor">
+Donor 1
+      </Characteristics>
+      <Characteristics tag="agent">
+No virus control
+      </Characteristics>
+      <Characteristics tag="cell type">
+Primary human pDCs
+      </Characteristics>
+      <Treatment-Protocol>
+pDCs were cultured with or without influenza A virus for 8 h.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Primary human pDCs were cultured in complete RPMI media (10% FBS, 1% penicillin-streptomycin, 1% sodium pyruvate, 1% HEPES buffer solution, 1% non-essential amino acids, 1% glutamate) and IL-3.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was extracted using Arcturus® PicoPure® RNA isolation kit in accordance with the prescribed protocol provided with the kit. Quality control was performed with Agilent Bioanalyser.
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+Biotinylated cRNA were prepared with the Ambion MessageAmp kit for Illumina arrays
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Standard Illumina hybridization protocol
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Standard Illumina scanning protocol
+    </Scan-Protocol>
+    <Description>
+Donor 1 - No virus control   - 8h
+    </Description>
+    <Data-Processing>
+The data were normalized using quantile normalization with Illumina Genome Studio
+    </Data-Processing>
+    <Platform-Ref ref="GPL10558" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Quantile normalized</Description>
+      </Column>
+      <Column position="3">
+        <Name>5455178010_A.Avg_NBEADS</Name>
+      </Column>
+      <Column position="4">
+        <Name>5455178010_A.BEAD_STDERR</Name>
+      </Column>
+      <Column position="5">
+        <Name>5455178010_A.Detection Pval</Name>
+      </Column>
+    <External-Data rows="47321">
+GSM1684095-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM1684096">
+    <Status database="GEO">
+      <Submission-Date>2015-05-13</Submission-Date>
+      <Release-Date>2016-02-01</Release-Date>
+      <Last-Update-Date>2016-02-01</Last-Update-Date>
+    </Status>
+    <Title>Donor 1 - Influenza treated - 8h</Title>
+    <Accession database="GEO">GSM1684096</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Blood pDCs</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="donor">
+Donor 1
+      </Characteristics>
+      <Characteristics tag="agent">
+Influenza A
+      </Characteristics>
+      <Characteristics tag="cell type">
+Primary human pDCs
+      </Characteristics>
+      <Treatment-Protocol>
+pDCs were cultured with or without influenza A virus for 8 h.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Primary human pDCs were cultured in complete RPMI media (10% FBS, 1% penicillin-streptomycin, 1% sodium pyruvate, 1% HEPES buffer solution, 1% non-essential amino acids, 1% glutamate) and IL-3.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was extracted using Arcturus® PicoPure® RNA isolation kit in accordance with the prescribed protocol provided with the kit. Quality control was performed with Agilent Bioanalyser.
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+Biotinylated cRNA were prepared with the Ambion MessageAmp kit for Illumina arrays
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Standard Illumina hybridization protocol
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Standard Illumina scanning protocol
+    </Scan-Protocol>
+    <Description>
+Donor 1 - Influenza treated - 8h
+    </Description>
+    <Data-Processing>
+The data were normalized using quantile normalization with Illumina Genome Studio
+    </Data-Processing>
+    <Platform-Ref ref="GPL10558" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Quantile normalized</Description>
+      </Column>
+      <Column position="3">
+        <Name>5455178010_B.Avg_NBEADS</Name>
+      </Column>
+      <Column position="4">
+        <Name>5455178010_B.BEAD_STDERR</Name>
+      </Column>
+      <Column position="5">
+        <Name>5455178010_B.Detection Pval</Name>
+      </Column>
+    <External-Data rows="47321">
+GSM1684096-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM1684097">
+    <Status database="GEO">
+      <Submission-Date>2015-05-13</Submission-Date>
+      <Release-Date>2016-02-01</Release-Date>
+      <Last-Update-Date>2016-02-01</Last-Update-Date>
+    </Status>
+    <Title>Donor 2 - No virus control   - 8h</Title>
+    <Accession database="GEO">GSM1684097</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Blood pDCs</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="donor">
+Donor 2
+      </Characteristics>
+      <Characteristics tag="agent">
+No virus control
+      </Characteristics>
+      <Characteristics tag="cell type">
+Primary human pDCs
+      </Characteristics>
+      <Treatment-Protocol>
+pDCs were cultured with or without influenza A virus for 8 h.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Primary human pDCs were cultured in complete RPMI media (10% FBS, 1% penicillin-streptomycin, 1% sodium pyruvate, 1% HEPES buffer solution, 1% non-essential amino acids, 1% glutamate) and IL-3.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was extracted using Arcturus® PicoPure® RNA isolation kit in accordance with the prescribed protocol provided with the kit. Quality control was performed with Agilent Bioanalyser.
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+Biotinylated cRNA were prepared with the Ambion MessageAmp kit for Illumina arrays
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Standard Illumina hybridization protocol
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Standard Illumina scanning protocol
+    </Scan-Protocol>
+    <Description>
+Donor 2 - No virus control   - 8h
+    </Description>
+    <Data-Processing>
+The data were normalized using quantile normalization with Illumina Genome Studio
+    </Data-Processing>
+    <Platform-Ref ref="GPL10558" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Quantile normalized</Description>
+      </Column>
+      <Column position="3">
+        <Name>5455178010_E.Avg_NBEADS</Name>
+      </Column>
+      <Column position="4">
+        <Name>5455178010_E.BEAD_STDERR</Name>
+      </Column>
+      <Column position="5">
+        <Name>5455178010_E.Detection Pval</Name>
+      </Column>
+    <External-Data rows="47321">
+GSM1684097-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM1684098">
+    <Status database="GEO">
+      <Submission-Date>2015-05-13</Submission-Date>
+      <Release-Date>2016-02-01</Release-Date>
+      <Last-Update-Date>2016-02-01</Last-Update-Date>
+    </Status>
+    <Title>Donor 2 - Influenza treated - 8h</Title>
+    <Accession database="GEO">GSM1684098</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Blood pDCs</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="donor">
+Donor 2
+      </Characteristics>
+      <Characteristics tag="agent">
+Influenza A
+      </Characteristics>
+      <Characteristics tag="cell type">
+Primary human pDCs
+      </Characteristics>
+      <Treatment-Protocol>
+pDCs were cultured with or without influenza A virus for 8 h.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Primary human pDCs were cultured in complete RPMI media (10% FBS, 1% penicillin-streptomycin, 1% sodium pyruvate, 1% HEPES buffer solution, 1% non-essential amino acids, 1% glutamate) and IL-3.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was extracted using Arcturus® PicoPure® RNA isolation kit in accordance with the prescribed protocol provided with the kit. Quality control was performed with Agilent Bioanalyser.
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+Biotinylated cRNA were prepared with the Ambion MessageAmp kit for Illumina arrays
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Standard Illumina hybridization protocol
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Standard Illumina scanning protocol
+    </Scan-Protocol>
+    <Description>
+Donor 2 - Influenza treated - 8h
+    </Description>
+    <Data-Processing>
+The data were normalized using quantile normalization with Illumina Genome Studio
+    </Data-Processing>
+    <Platform-Ref ref="GPL10558" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Quantile normalized</Description>
+      </Column>
+      <Column position="3">
+        <Name>5455178010_F.Avg_NBEADS</Name>
+      </Column>
+      <Column position="4">
+        <Name>5455178010_F.BEAD_STDERR</Name>
+      </Column>
+      <Column position="5">
+        <Name>5455178010_F.Detection Pval</Name>
+      </Column>
+    <External-Data rows="47321">
+GSM1684098-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM1684099">
+    <Status database="GEO">
+      <Submission-Date>2015-05-13</Submission-Date>
+      <Release-Date>2016-02-01</Release-Date>
+      <Last-Update-Date>2016-02-01</Last-Update-Date>
+    </Status>
+    <Title>Donor 3 - No virus control   - 8h</Title>
+    <Accession database="GEO">GSM1684099</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Blood pDCs</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="donor">
+Donor 3
+      </Characteristics>
+      <Characteristics tag="agent">
+No virus control
+      </Characteristics>
+      <Characteristics tag="cell type">
+Primary human pDCs
+      </Characteristics>
+      <Treatment-Protocol>
+pDCs were cultured with or without influenza A virus for 8 h.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Primary human pDCs were cultured in complete RPMI media (10% FBS, 1% penicillin-streptomycin, 1% sodium pyruvate, 1% HEPES buffer solution, 1% non-essential amino acids, 1% glutamate) and IL-3.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was extracted using Arcturus® PicoPure® RNA isolation kit in accordance with the prescribed protocol provided with the kit. Quality control was performed with Agilent Bioanalyser.
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+Biotinylated cRNA were prepared with the Ambion MessageAmp kit for Illumina arrays
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Standard Illumina hybridization protocol
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Standard Illumina scanning protocol
+    </Scan-Protocol>
+    <Description>
+Donor 3 - No virus control   - 8h
+    </Description>
+    <Data-Processing>
+The data were normalized using quantile normalization with Illumina Genome Studio
+    </Data-Processing>
+    <Platform-Ref ref="GPL10558" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Quantile normalized</Description>
+      </Column>
+      <Column position="3">
+        <Name>5455178010_I.Avg_NBEADS</Name>
+      </Column>
+      <Column position="4">
+        <Name>5455178010_I.BEAD_STDERR</Name>
+      </Column>
+      <Column position="5">
+        <Name>5455178010_I.Detection Pval</Name>
+      </Column>
+    <External-Data rows="47321">
+GSM1684099-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM1684100">
+    <Status database="GEO">
+      <Submission-Date>2015-05-13</Submission-Date>
+      <Release-Date>2016-02-01</Release-Date>
+      <Last-Update-Date>2016-02-01</Last-Update-Date>
+    </Status>
+    <Title>Donor 3 - Influenza treated - 8h</Title>
+    <Accession database="GEO">GSM1684100</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Blood pDCs</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="donor">
+Donor 3
+      </Characteristics>
+      <Characteristics tag="agent">
+Influenza A
+      </Characteristics>
+      <Characteristics tag="cell type">
+Primary human pDCs
+      </Characteristics>
+      <Treatment-Protocol>
+pDCs were cultured with or without influenza A virus for 8 h.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Primary human pDCs were cultured in complete RPMI media (10% FBS, 1% penicillin-streptomycin, 1% sodium pyruvate, 1% HEPES buffer solution, 1% non-essential amino acids, 1% glutamate) and IL-3.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was extracted using Arcturus® PicoPure® RNA isolation kit in accordance with the prescribed protocol provided with the kit. Quality control was performed with Agilent Bioanalyser.
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+Biotinylated cRNA were prepared with the Ambion MessageAmp kit for Illumina arrays
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Standard Illumina hybridization protocol
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Standard Illumina scanning protocol
+    </Scan-Protocol>
+    <Description>
+Donor 3 - Influenza treated - 8h
+    </Description>
+    <Data-Processing>
+The data were normalized using quantile normalization with Illumina Genome Studio
+    </Data-Processing>
+    <Platform-Ref ref="GPL10558" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Quantile normalized</Description>
+      </Column>
+      <Column position="3">
+        <Name>5455178010_J.Avg_NBEADS</Name>
+      </Column>
+      <Column position="4">
+        <Name>5455178010_J.BEAD_STDERR</Name>
+      </Column>
+      <Column position="5">
+        <Name>5455178010_J.Detection Pval</Name>
+      </Column>
+    <External-Data rows="47321">
+GSM1684100-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM1684101">
+    <Status database="GEO">
+      <Submission-Date>2015-05-13</Submission-Date>
+      <Release-Date>2016-02-01</Release-Date>
+      <Last-Update-Date>2016-02-01</Last-Update-Date>
+    </Status>
+    <Title>Donor 4 - No virus control   - 8h</Title>
+    <Accession database="GEO">GSM1684101</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Blood pDCs</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="donor">
+Donor 4
+      </Characteristics>
+      <Characteristics tag="agent">
+No virus control
+      </Characteristics>
+      <Characteristics tag="cell type">
+Primary human pDCs
+      </Characteristics>
+      <Treatment-Protocol>
+pDCs were cultured with or without influenza A virus for 8 h.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Primary human pDCs were cultured in complete RPMI media (10% FBS, 1% penicillin-streptomycin, 1% sodium pyruvate, 1% HEPES buffer solution, 1% non-essential amino acids, 1% glutamate) and IL-3.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was extracted using Arcturus® PicoPure® RNA isolation kit in accordance with the prescribed protocol provided with the kit. Quality control was performed with Agilent Bioanalyser.
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+Biotinylated cRNA were prepared with the Ambion MessageAmp kit for Illumina arrays
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Standard Illumina hybridization protocol
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Standard Illumina scanning protocol
+    </Scan-Protocol>
+    <Description>
+Donor 4 - No virus control   - 8h
+    </Description>
+    <Data-Processing>
+The data were normalized using quantile normalization with Illumina Genome Studio
+    </Data-Processing>
+    <Platform-Ref ref="GPL10558" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Quantile normalized</Description>
+      </Column>
+      <Column position="3">
+        <Name>5522887032_E.Avg_NBEADS</Name>
+      </Column>
+      <Column position="4">
+        <Name>5522887032_E.BEAD_STDERR</Name>
+      </Column>
+      <Column position="5">
+        <Name>5522887032_E.Detection Pval</Name>
+      </Column>
+    <External-Data rows="47321">
+GSM1684101-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM1684102">
+    <Status database="GEO">
+      <Submission-Date>2015-05-13</Submission-Date>
+      <Release-Date>2016-02-01</Release-Date>
+      <Last-Update-Date>2016-02-01</Last-Update-Date>
+    </Status>
+    <Title>Donor 4 - Influenza treated - 8h</Title>
+    <Accession database="GEO">GSM1684102</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Blood pDCs</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="donor">
+Donor 4
+      </Characteristics>
+      <Characteristics tag="agent">
+Influenza A
+      </Characteristics>
+      <Characteristics tag="cell type">
+Primary human pDCs
+      </Characteristics>
+      <Treatment-Protocol>
+pDCs were cultured with or without influenza A virus for 8 h.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Primary human pDCs were cultured in complete RPMI media (10% FBS, 1% penicillin-streptomycin, 1% sodium pyruvate, 1% HEPES buffer solution, 1% non-essential amino acids, 1% glutamate) and IL-3.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was extracted using Arcturus® PicoPure® RNA isolation kit in accordance with the prescribed protocol provided with the kit. Quality control was performed with Agilent Bioanalyser.
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+Biotinylated cRNA were prepared with the Ambion MessageAmp kit for Illumina arrays
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Standard Illumina hybridization protocol
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Standard Illumina scanning protocol
+    </Scan-Protocol>
+    <Description>
+Donor 4 - Influenza treated - 8h
+    </Description>
+    <Data-Processing>
+The data were normalized using quantile normalization with Illumina Genome Studio
+    </Data-Processing>
+    <Platform-Ref ref="GPL10558" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Quantile normalized</Description>
+      </Column>
+      <Column position="3">
+        <Name>5522887032_F.Avg_NBEADS</Name>
+      </Column>
+      <Column position="4">
+        <Name>5522887032_F.BEAD_STDERR</Name>
+      </Column>
+      <Column position="5">
+        <Name>5522887032_F.Detection Pval</Name>
+      </Column>
+    <External-Data rows="47321">
+GSM1684102-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM1684103">
+    <Status database="GEO">
+      <Submission-Date>2015-05-13</Submission-Date>
+      <Release-Date>2016-02-01</Release-Date>
+      <Last-Update-Date>2016-02-01</Last-Update-Date>
+    </Status>
+    <Title>Donor 5 - No virus control   - 8h</Title>
+    <Accession database="GEO">GSM1684103</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Blood pDCs</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="donor">
+Donor 5
+      </Characteristics>
+      <Characteristics tag="agent">
+No virus control
+      </Characteristics>
+      <Characteristics tag="cell type">
+Primary human pDCs
+      </Characteristics>
+      <Treatment-Protocol>
+pDCs were cultured with or without influenza A virus for 8 h.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Primary human pDCs were cultured in complete RPMI media (10% FBS, 1% penicillin-streptomycin, 1% sodium pyruvate, 1% HEPES buffer solution, 1% non-essential amino acids, 1% glutamate) and IL-3.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was extracted using Arcturus® PicoPure® RNA isolation kit in accordance with the prescribed protocol provided with the kit. Quality control was performed with Agilent Bioanalyser.
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+Biotinylated cRNA were prepared with the Ambion MessageAmp kit for Illumina arrays
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Standard Illumina hybridization protocol
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Standard Illumina scanning protocol
+    </Scan-Protocol>
+    <Description>
+Donor 5 - No virus control   - 8h
+    </Description>
+    <Data-Processing>
+The data were normalized using quantile normalization with Illumina Genome Studio
+    </Data-Processing>
+    <Platform-Ref ref="GPL10558" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Quantile normalized</Description>
+      </Column>
+      <Column position="3">
+        <Name>5522887032_I.Avg_NBEADS</Name>
+      </Column>
+      <Column position="4">
+        <Name>5522887032_I.BEAD_STDERR</Name>
+      </Column>
+      <Column position="5">
+        <Name>5522887032_I.Detection Pval</Name>
+      </Column>
+    <External-Data rows="47321">
+GSM1684103-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM1684104">
+    <Status database="GEO">
+      <Submission-Date>2015-05-13</Submission-Date>
+      <Release-Date>2016-02-01</Release-Date>
+      <Last-Update-Date>2016-02-01</Last-Update-Date>
+    </Status>
+    <Title>Donor 5 - Influenza treated - 8h</Title>
+    <Accession database="GEO">GSM1684104</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Blood pDCs</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="donor">
+Donor 5
+      </Characteristics>
+      <Characteristics tag="agent">
+Influenza A
+      </Characteristics>
+      <Characteristics tag="cell type">
+Primary human pDCs
+      </Characteristics>
+      <Treatment-Protocol>
+pDCs were cultured with or without influenza A virus for 8 h.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Primary human pDCs were cultured in complete RPMI media (10% FBS, 1% penicillin-streptomycin, 1% sodium pyruvate, 1% HEPES buffer solution, 1% non-essential amino acids, 1% glutamate) and IL-3.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was extracted using Arcturus® PicoPure® RNA isolation kit in accordance with the prescribed protocol provided with the kit. Quality control was performed with Agilent Bioanalyser.
+      </Extract-Protocol>
+      <Label>biotin</Label>
+      <Label-Protocol>
+Biotinylated cRNA were prepared with the Ambion MessageAmp kit for Illumina arrays
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+Standard Illumina hybridization protocol
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Standard Illumina scanning protocol
+    </Scan-Protocol>
+    <Description>
+Donor 5 - Influenza treated - 8h
+    </Description>
+    <Data-Processing>
+The data were normalized using quantile normalization with Illumina Genome Studio
+    </Data-Processing>
+    <Platform-Ref ref="GPL10558" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Quantile normalized</Description>
+      </Column>
+      <Column position="3">
+        <Name>5522887032_J.Avg_NBEADS</Name>
+      </Column>
+      <Column position="4">
+        <Name>5522887032_J.BEAD_STDERR</Name>
+      </Column>
+      <Column position="5">
+        <Name>5522887032_J.Detection Pval</Name>
+      </Column>
+    <External-Data rows="47321">
+GSM1684104-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Series iid="GSE68849">
+    <Status database="GEO">
+      <Submission-Date>2015-05-13</Submission-Date>
+      <Release-Date>2016-02-01</Release-Date>
+      <Last-Update-Date>2018-08-13</Last-Update-Date>
+    </Status>
+    <Title>Impact of influenza A on human plasmacytoid dendritic cells (pDC) gene expression</Title>
+    <Accession database="GEO">GSE68849</Accession>
+    <Pubmed-ID>26826244</Pubmed-ID>
+    <Summary>
+Over 2600 genes were differentially expressed in pDCs exposed to influenza A compared with the controls (no virus). Multiple functional group clusters of genes were impacted, including those involving antiviral responses and also metabolism, such as the glycolysis, oxidative phosphorylation, glucose metabolic process, and positive regulation of macromolecule biosynthesis clusters.
+    </Summary>
+    <Overall-Design>
+Blood pDCs were purified from 5 human donors, exposed ex vivo for 8 h to either influenza A or no virus, harvested, and RNA was extracted for subsequent DNA microarray analysis.
+    </Overall-Design>
+    <Type>Expression profiling by array</Type>
+    <Contributor-Ref ref="contrib3" position="1" />
+    <Contributor-Ref ref="contrib4" position="2" />
+    <Contact-Ref ref="contrib1" />
+    <Sample-Ref ref="GSM1684095" />
+    <Sample-Ref ref="GSM1684096" />
+    <Sample-Ref ref="GSM1684097" />
+    <Sample-Ref ref="GSM1684098" />
+    <Sample-Ref ref="GSM1684099" />
+    <Sample-Ref ref="GSM1684100" />
+    <Sample-Ref ref="GSM1684101" />
+    <Sample-Ref ref="GSM1684102" />
+    <Sample-Ref ref="GSM1684103" />
+    <Sample-Ref ref="GSM1684104" />
+    <Supplementary-Data type="TAR">
+ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE68nnn/GSE68849/suppl/GSE68849_RAW.tar
+    </Supplementary-Data>
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE68nnn/GSE68849/suppl/GSE68849_non-normalized.txt.gz
+    </Supplementary-Data>
+    <Relation type="BioProject" target="https://www.ncbi.nlm.nih.gov/bioproject/PRJNA283884" />
+  </Series>
+
+</MINiML>

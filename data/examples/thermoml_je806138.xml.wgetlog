@@ -1,0 +1,13 @@
+--2020-05-31 11:44:05--  https://raw.githubusercontent.com/choderalab/thermopyl/master/thermopyl/data/je8006138.xml
+Resolving raw.githubusercontent.com... 151.101.0.133, 151.101.64.133, 151.101.128.133, ...
+Connecting to raw.githubusercontent.com|151.101.0.133|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 108899 (106K) [text/plain]
+Saving to: ‘thermoml_je806138.xml’
+
+     0K .......... .......... .......... .......... .......... 47% 2.56M 0s
+    50K .......... .......... .......... .......... .......... 94% 5.40M 0s
+   100K ......                                                100% 18.0M=0.03s
+
+2020-05-31 11:44:05 (3.65 MB/s) - ‘thermoml_je806138.xml’ saved [108899/108899]
+

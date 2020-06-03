@@ -1,0 +1,11 @@
+--2020-05-31 11:05:17--  http://api.gbif.org/v1/occurrence/1086659096
+Resolving api.gbif.org... 130.225.43.2
+Connecting to api.gbif.org|130.225.43.2|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 2178 (2.1K) [application/json]
+Saving to: ‘gbif.json’
+
+     0K ..                                                    100% 9.19M=0s
+
+2020-05-31 11:05:18 (9.19 MB/s) - ‘gbif.json’ saved [2178/2178]
+

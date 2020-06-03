@@ -1,0 +1,11 @@
+--2020-05-31 12:13:01--  https://raw.githubusercontent.com/datatagsuite/examples/master/ClinicalTrials.gov-NCT00001372.json
+Resolving raw.githubusercontent.com... 151.101.0.133, 151.101.64.133, 151.101.128.133, ...
+Connecting to raw.githubusercontent.com|151.101.0.133|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 13578 (13K) [text/plain]
+Saving to: ‘dats_NCT00001372.json’
+
+     0K .......... ...                                        100% 1.07M=0.01s
+
+2020-05-31 12:13:01 (1.07 MB/s) - ‘dats_NCT00001372.json’ saved [13578/13578]
+

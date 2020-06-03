@@ -1,0 +1,15 @@
+--2020-05-31 12:05:59--  https://raw.githubusercontent.com/flaviusb/saucerman-figures/6f0a165996f061cde15b48f0d95e3a97a97367df/saucerman_brunton_michailova_mcculloch_2003.cellml
+Resolving raw.githubusercontent.com... 151.101.0.133, 151.101.64.133, 151.101.128.133, ...
+Connecting to raw.githubusercontent.com|151.101.0.133|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 210506 (206K) [text/plain]
+Saving to: ‘cellml_saucerman_brunton_michailova_mcculloch_2003.xml’
+
+     0K .......... .......... .......... .......... .......... 24% 1.63M 0s
+    50K .......... .......... .......... .......... .......... 48% 3.63M 0s
+   100K .......... .......... .......... .......... .......... 72% 4.70M 0s
+   150K .......... .......... .......... .......... .......... 97% 4.47M 0s
+   200K .....                                                 100% 12.5M=0.07s
+
+2020-05-31 12:06:00 (3.08 MB/s) - ‘cellml_saucerman_brunton_michailova_mcculloch_2003.xml’ saved [210506/210506]
+

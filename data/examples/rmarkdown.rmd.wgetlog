@@ -1,0 +1,11 @@
+--2020-05-28 14:30:55--  https://raw.githubusercontent.com/jmonlong/MonBUG18_RMarkdown/9f721e709251d8f1ee8e8840bae41efe3cdca4bc/examples/html/exampleHTML.Rmd
+Resolving raw.githubusercontent.com... 151.101.0.133, 151.101.64.133, 151.101.128.133, ...
+Connecting to raw.githubusercontent.com|151.101.0.133|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 1881 (1.8K) [text/plain]
+Saving to: ‘rmarkdown.rmd’
+
+     0K .                                                     100% 7.57M=0s
+
+2020-05-28 14:30:55 (7.57 MB/s) - ‘rmarkdown.rmd’ saved [1881/1881]
+

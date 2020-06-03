@@ -1,0 +1,11 @@
+--2020-05-31 11:31:12--  https://raw.githubusercontent.com/torbjornbjorkman/cif2cell/c1261203fa32f83afdafd80426dc268b336613e4/cifs/SiC.cif
+Resolving raw.githubusercontent.com... 151.101.0.133, 151.101.64.133, 151.101.128.133, ...
+Connecting to raw.githubusercontent.com|151.101.0.133|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 3779 (3.7K) [text/plain]
+Saving to: ‘silicon_carbide.cif’
+
+     0K ...                                                   100% 13.5M=0s
+
+2020-05-31 11:31:12 (13.5 MB/s) - ‘silicon_carbide.cif’ saved [3779/3779]
+
