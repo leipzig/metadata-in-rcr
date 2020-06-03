@@ -1,0 +1,11 @@
+*.Rproj
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+src/secrets/api.py
+__pycache__
+.DS_Store
+data/lens/citespace
+.ipynb_checkpoints
+src/condabuilds/
