@@ -1,0 +1,14 @@
+Standard	Layer	Publication	Home	Example	Encoding	Domain
+CellML	Input	10.1177/0037549703040939	https://www.cellml.org/	cellml_saucerman_brunton_michailova_mcculloch_2003.xml	XML	Biology
+CIF2	Input	10.1107/s1600576715021871	https://www.iucr.org/resources/cif/cif2		Custom	Crystallography
+DATS	Input	10.1093/gigascience/giz165	https://github.com/datatagsuite		JSON	Biomedical
+DICOM	Input	10.1148/radiographics.12.2.1561424	https://www.dicomstandard.org/	dicom	Custom	Images
+EML	Input	10.1016/j.ecoinf.2005.08.004			XML	Ecology
+FAANG	Input		https://www.ebi.ac.uk/vg/faang		Tabular	Specimens
+GBIF	Input	10.1371/journal.pone.0102623	https://www.gbif.org/		JSON	Biodiversity
+GO	Input	10.1038/75556	http://geneontology.org/		XML	Genes
+ISO/TC 276	Input		https://www.iso.org/committee/4514241.html			Biotechnology
+MIAME	Input	10.1038/ng1201-365			XML	Microarrays
+NetCDF	Input	10.1109/38.56302	https://www.unidata.ucar.edu/software/netcdf/			Arrays
+OGC	Input		https://www.ogc.org/			Geospatial
+ThermoML	Input	10.1021/je034088i	https://www.nist.gov/mml/acmd/trc/thermoml		XML	Compounds
