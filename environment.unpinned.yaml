@@ -1,0 +1,24 @@
+name: metadatainrcr
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+  - r
+dependencies:
+  - cwltool
+  - r-readr
+  - r-readxl
+  - r-stringr
+  - r-lubridate
+  - r-rvest
+  - r-ggplot2
+  - r-wordcloud
+  - r-tidytext
+  - conda-build
+  - autopep8
+  - entrez-direct
+  - jupyter
+  - pandas
+  - scikit-learn
+prefix: /Users/leipzig/miniconda3/envs/metadatainrcr
+

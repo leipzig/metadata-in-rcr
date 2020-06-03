@@ -6,6 +6,6 @@
 src/secrets/api.py
 __pycache__
 .DS_Store
-data/lens/citespace
+data/lens/citespace/
 .ipynb_checkpoints
 src/condabuilds/
