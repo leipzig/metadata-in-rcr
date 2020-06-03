@@ -21,9 +21,9 @@ library(readxl)
 library(stringr)
 ```
 
-## Fetching data from Awesome Reproducible Research
+## Fetching and processing data from Awesome Reproducible Research
 There is some munging that needs to be done to access the publication dates, clean up the sizes, simplify approaches into their main goals, and classify by macrofield
-```{r munge}
+```{r fetchandprocess}
 #try to parse the github repo as it is now vs a commit we know will work
 useLive<-TRUE
 if(useLive){
@@ -33,32 +33,32 @@ if(useLive){
 }
 
 #fetch ARR readme, convert meta props as table cells, make size numeric, simplify approaches, classify macrofields
-  read_html(url) %>%
+read_html(url) %>%
   as.character()  %>% 
-    stringr::str_replace_all("<meta property=\"datePublished\" content=\"(\\d\\d\\d\\d-\\d\\d-\\d\\d)\">","</td><td>\\1</td><td>") %>% 
-    stringr::str_replace_all("<meta property=\"embeddedDate\">","</td><td>Date</td><td>Year") %>% 
-    xml2::read_html() %>%
-    html_nodes(xpath='//*[@id="case_studies"]') %>%
-    html_table(header=TRUE) %>% first() %>%
-    mutate(Date=as.Date(Date)) %>%
-    mutate(Size=stringr::str_replace_all(Size,'[\\-,A-Za-z]','')) %>% 
-    mutate(Size=stringr::str_trim(Size)) %>% 
-    rowwise() %>%
-    mutate(Size=max(as.numeric(stringr::str_split(string = Size,pattern = '\\s+',simplify=TRUE),na.rm = TRUE),na.rm = TRUE)) %>%
-    mutate(Approach = stringr::str_replace(Approach,'Robustness test','Test of Robustness')) %>%
-    mutate(Approach=case_when(Approach=='Synthetic replication & refactor' ~ 'Refactor',
-                              Approach=='Survey, Reproduction' ~ 'Survey',
-                              Approach=='Reproduction, case narrative' ~ 'Reproduction',
-                              Approach=='Refactor and test of robustness' ~ 'Refactor',
-           TRUE ~ as.character(Approach))) %>%
-    mutate(Field=case_when(
-        str_detect(Field,'[Bb]io|Med|Gene|geno|Epidem|Anaes|Viro|Pharma|Geno|Eco|Neuro|Cell|Neph') ~ "Life Sciences",
-        str_detect(Field,'(Econ|Social|Psych|rchae)') ~ 'Social Sciences',
-        str_detect(Field,'(Compu|Mach|Physics|Eng|NLP|earning|Signal|Soft|Geo|Arti)') ~ 'Physical Sciences & Engr',
-        str_detect(Field,'^All$') ~ 'All Science',
-        str_detect(Field,'^Science$') ~ 'All Science',
-        TRUE ~ as.character(Field)
-    )) -> timeline
+  stringr::str_replace_all("<meta property=\"datePublished\" content=\"(\\d\\d\\d\\d-\\d\\d-\\d\\d)\">","</td><td>\\1</td><td>") %>% 
+  stringr::str_replace_all("<meta property=\"embeddedDate\">","</td><td>Date</td><td>Year") %>% 
+  xml2::read_html() %>%
+  html_nodes(xpath='//*[@id="case_studies"]') %>%
+  html_table(header=TRUE) %>% first() %>%
+  mutate(Date=as.Date(Date)) %>%
+  mutate(Size=stringr::str_replace_all(Size,'[\\-,A-Za-z]','')) %>% 
+  mutate(Size=stringr::str_trim(Size)) %>% 
+  rowwise() %>%
+  mutate(Size=max(as.numeric(stringr::str_split(string = Size,pattern = '\\s+',simplify=TRUE),na.rm = TRUE),na.rm = TRUE)) %>%
+  mutate(Approach = stringr::str_replace(Approach,'Robustness test','Test of Robustness')) %>%
+  mutate(Approach=case_when(Approach=='Synthetic replication & refactor' ~ 'Refactor',
+                            Approach=='Survey, Reproduction' ~ 'Survey',
+                            Approach=='Reproduction, case narrative' ~ 'Reproduction',
+                            Approach=='Refactor and test of robustness' ~ 'Refactor',
+                            TRUE ~ as.character(Approach))) %>%
+  mutate(Field=case_when(
+    str_detect(Field,'[Bb]io|Med|Gene|geno|Epidem|Anaes|Viro|Pharma|Geno|Eco|Neuro|Cell|Neph') ~ "Life Sciences",
+    str_detect(Field,'(Econ|Social|Psych|rchae)') ~ 'Social Sciences',
+    str_detect(Field,'(Compu|Mach|Physics|Eng|NLP|earning|Signal|Soft|Geo|Arti)') ~ 'Physical Sciences & Engr',
+    str_detect(Field,'^All$') ~ 'All Science',
+    str_detect(Field,'^Science$') ~ 'All Science',
+    TRUE ~ as.character(Field)
+  )) -> timeline
 ```
 
 ## Timeline
@@ -66,7 +66,7 @@ if(useLive){
 ```{r timeline, fig.width=10}
 ggplot(timeline) +
   geom_point(aes(x = Date, y = Approach, color = Field,
-                    size = log10(Size))) +
+                 size = log10(Size))) +
   scale_size_continuous(name = 'Study size',breaks=c(0,2,4,6),labels=c("1","100","1000","1e6")) +
   scale_color_discrete(name = 'Field') +
   scale_x_date(date_breaks="2 years",date_labels = "%Y")
@@ -78,6 +78,6 @@ sessionInfo()
 ```
 
 ## Git commit
-```{bash, engine.opts='-l'}
+```{bash git, engine.opts='-l'}
 git show --summary
 ```
