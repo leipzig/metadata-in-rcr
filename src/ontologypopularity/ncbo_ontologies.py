@@ -44,6 +44,15 @@ for ontology in ontologies:
 showUids = False
 ec = Client(api_key=api.apikey)
 
+#problem entires
+#International Classification of Diseases, Version 9 - Clinical Modification Ontology
+#Funding, Research Administration and Projects Ontology
+#Neomark Oral Cancer Ontology, version 3
+#Ontology of Alternative Medicine, French
+#Neomark Oral Cancer Ontology, version 4
+#Devices, Experimental scaffolds and Biomaterials Ontology
+#Gender, Sex, and Sexual Orientation Ontology
+#Systematized Nomenclature of Medicine, International Version Ontology
 onts = ontology_names
 t0 = time.time()
 with open('ncbo_citations.json', 'r') as cite_file:
