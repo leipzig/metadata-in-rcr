@@ -1,7 +1,9 @@
 # The Role of Metadata in Reproducible Computational Research
+
 This is a supplemental resource to Leipzig et al. "The Role of Metadata in Reproducible Computational Research" https://arxiv.org/pdf/2006.08589.pdf
 
 ## Organization
+
 ```
 ├───data/
 │   ├───examples/                  Examples of metadata standards
@@ -20,6 +22,7 @@ This is a supplemental resource to Leipzig et al. "The Role of Metadata in Repro
 ├───environment.osx.yaml           OSX pinned Conda depenencies
 ├───environment.unpinned.yaml      Unpinned Conda depenencies
 └───ro-crate-metadata.jsonld       RO Crate config
+└───.binder                        Environment configuration files for usage with Binder (mybinder.org)
 ```
 <!--tree_placeholder-->
 
@@ -100,6 +103,12 @@ Install [cwltool](https://github.com/common-workflow-language/cwltool)
 ```
 pip install cwltool
 cwltool src/cwl/tools/timeline.cwl --reportfile timeline.html
+```
+
+**Using repo2docker:**
+
+```bash
+repo2docker --editable .
 ```
 
 ## Contribute

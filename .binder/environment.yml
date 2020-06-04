@@ -1,0 +1,23 @@
+name: metadatainrcr
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+  - r
+dependencies:
+  - r-base
+  - cwltool
+  - r-readr
+  - r-readxl
+  - r-stringr
+  - r-lubridate
+  - r-rvest
+  - r-ggplot2
+  - r-wordcloud
+  - r-tidytext
+  - conda-build
+  - autopep8
+  - entrez-direct
+  - jupyter
+  - pandas
+  - scikit-learn

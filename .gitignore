@@ -10,3 +10,6 @@ data/lens/citespace/
 .ipynb_checkpoints
 src/condabuilds/
 src/timeline.html
+.ipython/
+
+.local/
