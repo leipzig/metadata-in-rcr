@@ -20,11 +20,13 @@ liftr:
 knitr::opts_chunk$set(echo = TRUE)
 library(dplyr)
 library(ggplot2)
+library(ggthemes)
 library(readr)
 library(lubridate)
 library(rvest)
 library(readxl)
 library(stringr)
+library(ggpubr)
 ```
 
 ## Fetching and processing data from Awesome Reproducible Research
@@ -64,18 +66,20 @@ read_html(url) %>%
     str_detect(Field,'^All$') ~ 'All Science',
     str_detect(Field,'^Science$') ~ 'All Science',
     TRUE ~ as.character(Field)
-  )) -> timeline
+  )) %>%
+  dplyr::arrange(Date) -> timeline
 ```
 
 ## Timeline
 
-```{r timeline, fig.width=10}
+```{r timeline, fig.width=7}
 ggplot(timeline) +
   geom_point(aes(x = Date, y = Approach, color = Field,
                  size = log10(Size))) +
-  scale_size_continuous(name = 'Study size',breaks=c(0,2,4,6),labels=c("1","100","1000","1e6")) +
+  scale_size_continuous(name = 'Study size',breaks=c(0,2,4,6),labels=c("1","100","1000","1e6"),range=c(3,10)) +
   scale_color_discrete(name = 'Field') +
-  scale_x_date(date_breaks="2 years",date_labels = "%Y")
+  scale_x_date(date_breaks="2 years",date_labels = "%Y")+
+  theme_pubr()
 ```
 
 ## Session

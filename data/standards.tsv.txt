@@ -1,5 +1,5 @@
 Standard	Layer	Domain	Publication	Site	Example	Encoding	Schema	Description
-CellML	Input	Biology	10.1177/0037549703040939	https://www.cellml.org/	cellml_saucerman_brunton_michailova_mcculloch_2003.xml	XML		
+CellML	Input	Biology	10.1177/0037549703040939	https://www.cellml.org/	cellml_saucerman_brunton_michailova_mcculloch_2003.xml	XML	RDF	
 CIF2	Input	Crystallography	10.1107/s1600576715021871	https://www.iucr.org/resources/cif/cif2		Custom		
 DATS	Input	Biomedical	10.1093/gigascience/giz165	https://github.com/datatagsuite		JSON		
 DICOM	Input	Images	10.1148/radiographics.12.2.1561424	https://www.dicomstandard.org/	dicom	Custom	Key-Value	
@@ -49,8 +49,8 @@ ONIX	Publication
 MeSH	Publication							
 LCSH	Publication							
 MP	Publication	Micropublications	10.1186/2041-1480-5-28				OWL	
-Open PHACTS	Publication	Drugs	10.1016/j.drudis.2012.05.016	https://www.openphacts.org/			RDF/XML	
+Open PHACTS	Publication	Drugs	10.1016/j.drudis.2012.05.016	https://www.openphacts.org/			RDF	
 SWAN	Publication	Neuromedicine	10.1016/j.jbi.2008.04.010					
 SPAR	Publication	Publishing		http://www.sparontologies.net/			OWL	
 PWO	Publication	Publishing	10.3233/SW-160230					
-PAV	Publication	Authorship	10.1186/2041-1480-4-37			XML	RDF/XML	
+PAV	Publication	Authorship	10.1186/2041-1480-4-37			XML	RDF	

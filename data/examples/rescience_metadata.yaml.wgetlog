@@ -1,0 +1,11 @@
+--2020-06-10 22:05:16--  https://raw.githubusercontent.com/rLarisch/ReScience-submission/f6c330c996b15560c4efd27340d3a900b940f380/article/metadata.yaml
+Resolving raw.githubusercontent.com... 151.101.0.133, 151.101.64.133, 151.101.128.133, ...
+Connecting to raw.githubusercontent.com|151.101.0.133|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 4408 (4.3K) [text/plain]
+Saving to: ‘rescience_metadata.yaml’
+
+     0K ....                                                  100% 10.1M=0s
+
+2020-06-10 22:05:16 (10.1 MB/s) - ‘rescience_metadata.yaml’ saved [4408/4408]
+

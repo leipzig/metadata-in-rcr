@@ -1,0 +1,11 @@
+--2020-06-10 22:06:33--  https://raw.githubusercontent.com/manubot/rootstock/b7e6f581fa6fb730bfe5e778e4fa455c8c1d9d33/content/metadata.yaml
+Resolving raw.githubusercontent.com... 151.101.0.133, 151.101.64.133, 151.101.128.133, ...
+Connecting to raw.githubusercontent.com|151.101.0.133|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 607 [text/plain]
+Saving to: ‘manubot_metadata.yaml’
+
+     0K                                                       100% 3.91M=0s
+
+2020-06-10 22:06:33 (3.91 MB/s) - ‘manubot_metadata.yaml’ saved [607/607]
+

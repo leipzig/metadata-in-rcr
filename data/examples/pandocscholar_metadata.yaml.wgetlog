@@ -1,0 +1,11 @@
+--2020-06-10 22:07:35--  https://raw.githubusercontent.com/pandoc-scholar/pandoc-scholar/master/example/article.md
+Resolving raw.githubusercontent.com... 151.101.0.133, 151.101.64.133, 151.101.128.133, ...
+Connecting to raw.githubusercontent.com|151.101.0.133|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 5405 (5.3K) [text/plain]
+Saving to: ‘pandocscholar_metadata.yaml’
+
+     0K .....                                                 100% 12.3M=0s
+
+2020-06-10 22:07:35 (12.3 MB/s) - ‘pandocscholar_metadata.yaml’ saved [5405/5405]
+
