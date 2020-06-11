@@ -54,3 +54,6 @@ SWAN	Publication	Neuromedicine	10.1016/j.jbi.2008.04.010
 SPAR	Publication	Publishing		http://www.sparontologies.net/			OWL	
 PWO	Publication	Publishing	10.3233/SW-160230					
 PAV	Publication	Authorship	10.1186/2041-1480-4-37			XML	RDF	
+Manubot	Publication	Publishing			manubot_metadata.yaml	YAML		
+ReScience	Publication	Publishing			rescience_metadata.yaml	YAML		
+PandocScholar	Publication	Publishing			pandocscholar_metadata.yaml	YAML		
