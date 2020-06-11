@@ -83,5 +83,5 @@ sessionInfo()
 
 ## Git commit
 ```{bash git, engine.opts='-l'}
-git show --summary
+git -C / show --summary
 ```
