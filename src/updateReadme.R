@@ -4,7 +4,7 @@ library(knitr)
 library(stringr)
 
 # transform the standards table into a markdown display with emojis
-read.table("data/standards.tsv.txt",sep="\t",header=TRUE) %>% 
+read.table("data/standards.tsv",sep="\t",header=TRUE) %>% 
   mutate(Publication=ifelse(Publication!='',paste0('[:books:](https://doi.org/',Publication,')'),'')) %>%
   mutate(Site=ifelse(Site!='',paste0('[:house:](',Site,')'),'')) %>%
   mutate(Example=ifelse(Example!='',paste0('[:clipboard:](data/examples/',Example,')'),'')) %>%
