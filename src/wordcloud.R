@@ -17,9 +17,9 @@ if(useFullText==TRUE){
     stringr::str_replace_all("\\[","") %>% 
     stringr::str_replace_all("\\]","") %>% 
     stringr::str_replace_all(" ","") %>% 
-    stringr::str_split(pattern=',') %>%
+    stringr::str_split(pattern=',',simplify = TRUE) %>%
     stringr::str_to_lower() -> tokenvec
-    data.frame(word=tokenvec[[1]]) %>% anti_join(stop_words) %>% count(word, sort = TRUE) %>% ungroup() -> tokens_clean
+    data.frame(word=tokenvec) %>% anti_join(stop_words) %>% count(word, sort = TRUE) %>% ungroup() -> tokens_clean
 }else{
   #just the abstracts
   path<-"../data/citations/metadata-in-rcr-refs.bib"
