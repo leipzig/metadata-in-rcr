@@ -44,7 +44,7 @@ BCO	Pipelines
 ERC	Pipelines	Research Compendia	10.5281/zenodo.2203844	https://o2r.info/erc-spec/		YAML	Key-Value	
 BEL	Publication	Biology	10.1016/j.drudis.2013.12.011	https://biological-expression-language.github.io/	selventa_small_corpus.bel	Custom
 BioPAX	Publication	Biology	10.1038/nbt1210-1308c	http://www.biopax.org/	https://reactome.org/download/current/biopax.zip	XML	OWL/RDF
-DC	Publication
+DC	Publication							
 JATS	Publication	Articles		https://jats.nlm.nih.gov/		XML	Tags DTD	
 ONIX	Publication							
 MeSH	Publication							
