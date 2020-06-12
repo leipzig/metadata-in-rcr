@@ -36,7 +36,7 @@ RO	Pipelines			http://www.researchobject.org/
 WICUS	Pipelines			http://vocab.linkeddata.es/wicus/wicus/				
 OPM	Pipelines			https://openprovenance.org/opm/				
 PROV-O	Pipelines			https://www.w3.org/TR/prov-o/				
-ReproZIp	Pipelines			https://www.reprozip.org/				
+ReproZip	Pipelines			https://www.reprozip.org/				The config for ReproZip is YAML. The actual recorded sessions are more like coredumps.
 ProvOne	Pipelines			https://purl.dataone.org/provone-v1-dev				
 WES	Pipelines							
 BagIt	Pipelines			https://tools.ietf.org/html/rfc8493				
