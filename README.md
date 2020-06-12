@@ -6,7 +6,7 @@ This is a supplemental resource to Leipzig et al. "The Role of Metadata in Repro
 ├───data/
 │   ├───examples/                  Examples of metadata standards
 │   ├───lens/                      Search exports for scimetric journal analysis
-│   └───standards.tsv.txt          Raw standards table
+│   └───standards.tsv              Raw standards table
 ├───src/
 │   ├───secrets/
 │   │   └───api.template.py        Replace this with api.py using your NCBI/NCBO keys
