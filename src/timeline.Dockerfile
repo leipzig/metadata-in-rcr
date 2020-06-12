@@ -2,11 +2,13 @@ FROM rocker/tidyverse:latest
 
 MAINTAINER Jeremy Leipzig <leipzig@gmail.com>
 
-# Set one or more individual labels
-LABEL com.example.version="0.0.1-beta"
-LABEL com.example.release-date="2020-06-11"
-LABEL com.example.version.is-production="FALSE"
 
+#label-schema see http://label-schema.org/rc1/
+LABEL org.label-schema.build-date="2020-06-12T11:28:47Z"
+LABEL org.label-schema.name = "timeline"
+LABEL org.label-schema.description = "This generates the ARR timeline plot"
+LABEL org.label-schema.schema-version = "1.0"
+LABEL org.label-schema.docker.cmd= "docker run -d -p 5000:5000 -v config.json:/etc/config.json myapp"
 
 RUN Rscript -e "install.packages(c('ggthemes','ggpubr'), repo = '$CRAN')"
 

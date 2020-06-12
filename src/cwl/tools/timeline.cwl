@@ -54,7 +54,7 @@ outputs:
     outputBinding:
       glob: $(inputs.reportfile)
       
-label: "pipelinehelper: produce the timeline from Awesome Reproducible Research"
+label: "produce the timeline from Awesome Reproducible Research"
 
 doc: 
   produce the timeline from Awesome Reproducible Research
