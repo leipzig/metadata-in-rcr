@@ -42,7 +42,7 @@ WES	Pipelines
 BagIt	Pipelines			https://tools.ietf.org/html/rfc8493				
 BCO	Pipelines							
 ERC	Pipelines	Research Compendia	10.5281/zenodo.2203844	https://o2r.info/erc-spec/		YAML	Key-Value	
-BEL	Publication							
+BEL	Publication	Publication	10.1016/j.drudis.2013.12.011	https://biological-expression-language.github.io/		Custom		
 DC	Publication							
 JATS	Publication	Articles		https://jats.nlm.nih.gov/		XML	Tags DTD	
 ONIX	Publication							
