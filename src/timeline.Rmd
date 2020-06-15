@@ -47,9 +47,10 @@ read_html(url) %>%
   mutate(Size=stringr::str_trim(Size)) %>% 
   rowwise() %>%
   mutate(Size=max(as.numeric(stringr::str_split(string = Size,pattern = '\\s+',simplify=TRUE),na.rm = TRUE),na.rm = TRUE)) %>%
-  mutate(Approach = stringr::str_replace(Approach,'Robustness test','Test of Robustness')) %>%
+  mutate(Approach = stringr::str_replace(Approach,'Robustness test','Test of robustness')) %>%
   mutate(Approach=case_when(Approach=='Synthetic replication & refactor' ~ 'Refactor',
                             Approach=='Survey, Reproduction' ~ 'Survey',
+                            Approach=='Census, Survey' ~ 'Census',
                             Approach=='Reproduction, case narrative' ~ 'Reproduction',
                             Approach=='Refactor and test of robustness' ~ 'Refactor',
                             TRUE ~ as.character(Approach))) %>%
@@ -61,6 +62,7 @@ read_html(url) %>%
     str_detect(Field,'^Science$') ~ 'All Science',
     TRUE ~ as.character(Field)
   )) %>%
+  mutate(Approach=factor(Approach,levels=rev(c("Census","Reproduction","Replication","Refactor","Survey","Test of robustness","Case narrative","Indepedent discussion"))) )%>%
   dplyr::arrange(Date) -> timeline
 ```
 
