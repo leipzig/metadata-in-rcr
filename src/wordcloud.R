@@ -28,4 +28,4 @@ if(useFullText==TRUE){
 }
 
 tokens_clean %>%
-with(wordcloud(word, n, random.order = FALSE, max.words = 100, colors=pal))
+with(wordcloud(word, n, random.order = FALSE, max.words = 100, colors=pal)) -> word_cloud

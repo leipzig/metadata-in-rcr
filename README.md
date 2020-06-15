@@ -96,6 +96,7 @@ https://stackoverflow.com/questions/1740341/what-is-the-difference-between-rdf-a
 
 ## How to generate figures for this article
 
+Install [cwltool](https://github.com/common-workflow-language/cwltool)
 ```
 TODO: CWL workflow, Dockerfile, Conda reqs
 ```
