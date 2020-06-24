@@ -1,13 +1,15 @@
 FROM rocker/tidyverse:latest
 
 MAINTAINER Jeremy Leipzig <leipzig@gmail.com>
+#usage: docker run -v report:/tmp/report leipzig/metadata-in-rcr-timeline:v0.4
 
-#label-schema see http://label-schema.org/rc1/
-LABEL org.label-schema.build-date="2020-06-12T11:28:47Z"
-LABEL org.label-schema.name = "timeline"
-LABEL org.label-schema.description = "This generates the ARR timeline plot"
-LABEL org.label-schema.schema-version = "1.0"
-LABEL org.label-schema.docker.cmd= "docker run -v report:/tmp/report leipzig/metadata-in-rcr-timeline:v0.4"
+#https://github.com/opencontainers/image-spec/blob/master/annotations.md
+LABEL org.opencontainers.image.created="2020-06-12T11:28:47Z"
+LABEL org.opencontainers.image.title = "timeline"
+LABEL org.opencontainers.image.description = "This generates the ARR timeline plot"
+LABEL org.opencontainers.image.revision = "25cab28f82751df9df4f9115da3e829e5169f15d"
+LABEL org.opencontainers.image.url = "https://github.com/leipzig/metadata-in-rcr"
+
 
 RUN Rscript -e "install.packages(c('ggthemes','ggpubr'), repo = '$CRAN')"
 
