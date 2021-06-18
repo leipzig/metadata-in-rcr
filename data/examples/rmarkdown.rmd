@@ -1,5 +1,25 @@
 ---
 title: "A title for the analysis"
+# author metadata, esp. used for scientific articles
+author:
+  - name: Jeremy Leipzig
+    footnote: Corresponding author
+    affiliation: "Metadata Research Center, Drexel University, College of Computing and Informatics, Philadelphia PA, USA"
+    orcid: "0000-0001-7224-9620"
+  - name: Daniel Nüst
+    affiliation: "Institute for Geoinformatics, University of Münster, Germany"
+    orcid: "0000-0002-0024-5046"
+    email: daniel.nuest@uni-muenster.de
+
+# parameters to manipulate workflow; defaults can be changed when compiling the document
+params:
+  year: 2020
+  region: "Europe"
+  printcode: TRUE
+  data: file.csv
+  max_n: 42
+
+# configuration and styling of different output document formats
 output: 
   html_document:
     theme: lumen
@@ -7,7 +27,18 @@ output:
     toc_float:
       collapsed: false
     code_folding: show
+    self_contained: true
+  pdf_document:
+    toc: yes
+    fig_caption: yes
+    df_print: kable
+linkcolor: blue
+
+# field values can be generated from code
+date: "`r format(Sys.time(), '%d %B, %Y')`"
 ---
+
+<!-- inspiration/sources for fake front matter: https://bookdown.org/yihui/rmarkdown/params-declare.html, https://github.com/nuest/reproducible-research-at-giscience/blob/master/paper/reproducible-research-at-giscience.Rmd -->
 
 ```{r include=FALSE}
 knitr::opts_chunk$set(echo=TRUE, message=FALSE, warning=FALSE, fig.width=8, tidy=TRUE)
