@@ -94,11 +94,12 @@ In this table we provide links to the authoritative publications and homepages f
 RDF vs OWL
 https://stackoverflow.com/questions/1740341/what-is-the-difference-between-rdf-and-owl
 
-## How to generate figures for this article
+## How to generate the timeline for this article
 
 Install [cwltool](https://github.com/common-workflow-language/cwltool)
 ```
-TODO: CWL workflow, Dockerfile, Conda reqs
+pip install cwltool
+cwltool src/cwl/tools/timeline.cwl --reportfile timeline.html
 ```
 
 ## Contribute
