@@ -10,6 +10,7 @@ LABEL org.opencontainers.image.description = "This generates the ARR timeline pl
 LABEL org.opencontainers.image.revision = "25cab28f82751df9df4f9115da3e829e5169f15d"
 LABEL org.opencontainers.image.url = "https://github.com/leipzig/metadata-in-rcr"
 
+RUN apt-get install -y --no-install-recommends libxt6
 
 RUN Rscript -e "install.packages(c('ggthemes','ggpubr'), repo = '$CRAN')"
 
