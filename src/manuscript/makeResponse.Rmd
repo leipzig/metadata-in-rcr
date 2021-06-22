@@ -1,0 +1,101 @@
+---
+title: "Review response Metadata-in-RCR"
+date: "`r Sys.Date()`"
+author: Jeremy Leipzig, Daniel Nüst, Charles Tapley Hoyt, Karthik Ram, Jane Greenberg
+output: 
+  rmdformats::downcute:
+    self_contained: true
+    thumbnails: false
+    lightbox: false
+    gallery: false
+    highlight: tango
+    use_bookdown: false
+    css: styles.css
+---
+
+
+```{r setup, eval=TRUE, echo=FALSE, message=FALSE, include=FALSE}
+library(dplyr)
+library(knitr)
+library(kableExtra)
+library(stringr)
+library(rmdformats)
+
+## Global options
+options(max.print = "75")
+opts_chunk$set(echo = FALSE,
+	             cache = FALSE,
+               prompt = FALSE,
+               tidy = FALSE,
+               comment = NA,
+               message = FALSE,
+               warning = FALSE)
+opts_knit$set(width = 75)
+```
+
+```{r funcs, eval=TRUE, echo=FALSE, message=FALSE, include=FALSE}
+triageURL<-"<<secretgooglesheetlink>>"
+
+googlesheets4::read_sheet(triageURL) %>% arrange(Reviewer,ReviewerImportance) -> triage
+
+#linkify anchor ids
+triage$Response<-stringr::str_replace_all(triage$Response,"(#[A-Z0-9]+)","<a href='\\1'>\\1</a>")
+```
+
+```{r reuseme, eval=TRUE, echo=FALSE, message=FALSE, include=FALSE}
+headerRow<-function(){
+  cat("<table><tr><td>ID</td><td>Reviewer</td><td>Importance</td></tr>\n")
+}
+
+displaySection<-function(section){cat(paste0("# ",section))}
+
+displayItem<-function(itemRow){
+  cat(paste("<tr class='table-dark'><td><a name=",itemRow['Identifier'],">",itemRow['Identifier'],"</a></td><td>Reviewer ",itemRow['Reviewer'],"</td><td>",itemRow['ReviewerImportance'],"</td></tr>\n",sep=""))
+  cat(paste('<tr><td>Request</td><td colspan="2">',itemRow['Request'],"</td></tr>\n"))
+  cat(paste('<tr><td>Response</td><td colspan="2">',itemRow['Response'],"</td></tr>\n"))
+}
+footerRow<-function(){
+  cat("</table>\n")
+}
+```
+Dear editors and reviewers,
+Thank you for the helpful comments and suggestions on this manuscript, "The Role of Metadata in Reproducible Computational Research". We have implemented the vast majority of these suggestions including new citations and tried to address each major addition where possible.
+
+```{r, eval=TRUE, echo=FALSE}
+reviewer <- 1
+```
+
+# Reviewer 1
+```{r respTab, results='asis', eval=TRUE, echo=FALSE}
+  headerRow()
+  res<-apply(triage %>% dplyr::filter(Reviewer==reviewer),1,displayItem)
+  footerRow()
+```
+
+```{r, eval=TRUE, echo=FALSE}
+reviewer <- 2
+```
+# Reviewer 2
+```{r, respTab, eval=TRUE, results='asis'}
+```
+
+```{r, eval=TRUE, echo=FALSE}
+reviewer <- 3
+```
+# Reviewer 3
+```{r, respTab, eval=TRUE, results='asis'}
+```
+
+```{r, eval=TRUE, echo=FALSE}
+reviewer <- 4
+```
+# Reviewer 4
+```{r, respTab, eval=TRUE, results='asis'}
+```
+
+```{r, eval=TRUE, echo=FALSE}
+reviewer <- 5
+```
+# Reviewer 5
+```{r, respTab, eval=TRUE, results='asis'}
+```
