@@ -13,3 +13,19 @@ src/timeline.html
 .ipython/
 
 .local/
+
+.cache/
+
+.conda/
+
+.jupyter/
+
+.rstudio/
+
+.subversion/
+
+.bash_history
+
+.bashrc
+
+.jupyter-server-log.txt

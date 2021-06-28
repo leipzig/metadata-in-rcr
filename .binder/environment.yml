@@ -15,6 +15,11 @@ dependencies:
   - r-ggplot2
   - r-wordcloud
   - r-tidytext
+  - r-rmarkdown
+  - r-ggpubr
+  - r-ggthemes
+  - r-here
+  - libstdcxx-ng
   - conda-build
   - autopep8
   - entrez-direct
