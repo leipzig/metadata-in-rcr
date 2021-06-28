@@ -10,13 +10,16 @@ This is a supplemental resource to Leipzig et al. "The Role of Metadata in Repro
 │   ├───lens/                      Search exports for scimetric journal analysis
 │   └───standards.tsv              Raw standards table
 ├───src/
+│   ├───cwl/tools/                 CWL configuration to produce the timeline plot
+│   ├───manuscript/                Manuscript revision document
 │   ├───secrets/
 │   │   └───api.template.py        Replace this with api.py using your NCBI/NCBO keys
-│   ├───ncbo_ontologies.py         Scimetric ontology popularity analysis
-│   ├───scimetric.ipynb            Scimetric journal meta/rcr frequency analysis
-│   ├───timeline.R                 Produces the RCR case study timeline in the paper
+│   ├───ontologies/                Scimetric ontology popularity analysis
+│   ├───repotutils/                Scripts for automating management of this repository
+│   ├───scimetric/                 Scimetric journal meta/rcr frequency analysis in a Jupyter Notebook
+│   ├───timeline/                  R Markdown document to produce the RCR case study timeline in the paper, incl. helper files for execution with CWL (wrapper script, Dockerfile)
 │   ├───wget2jsonld.py             Helper script to convert wget output to jsonld
-│   └───wordcloud.R                Produces word cloud from cited abstracts
+│   └───wordcloud/                 R script to produce word cloud from cited abstracts
 ├───LICENSE                        The LICENSE file
 ├───README.md                      What you are looking at
 ├───environment.osx.yaml           OSX pinned Conda depenencies
@@ -100,12 +103,25 @@ https://stackoverflow.com/questions/1740341/what-is-the-difference-between-rdf-a
 ## How to generate the timeline for this article
 
 Install [cwltool](https://github.com/common-workflow-language/cwltool)
+
 ```
 pip install cwltool
 cwltool src/cwl/tools/timeline.cwl --reportfile timeline.html
 ```
 
-**Using repo2docker:**
+Note that the tools requires Docker for runningthe computing environment, see the file `timeline/Dockerfile` for the definition of the image used in the `.cwl` file.
+
+## Run on Binder
+
+[MyBinder](https://mybinder.org/) is a tool for creating executable computing environments based on standard and widely used dependency management files.
+You can easily run important parts of the analysis for the manuscript by clicking on the badges below.
+Binder will create a container using the environment configuration from the directory `.binder/` and provide you with an interactive environment to execute notebooks or scripts.
+
+- Scimetric journal frequency analysis of RCR and metadata terms (opens a Jupyter Notebook) [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/leipzig/metadata-in-rcr/HEAD?filepath=src%2Fscimetric%2Fscimetric.ipynb)
+- Create Figure 2 from the paper (R Markdown notebook, open the file `src/timeline/timeline.Rmd` manually in RStudio) [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/leipzig/metadata-in-rcr/HEAD?urlpath=rstudio)
+- Create word cloud from cited abstracts (run R script `src/wordcloud/wordcloud.R`) [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/leipzig/metadata-in-rcr/HEAD?urlpath=rstudio)
+
+For development purposes, you can also run `repo2docker` locally in the directory of the repository.
 
 ```bash
 repo2docker --editable .
@@ -118,11 +134,3 @@ Contributions welcome!
 ## License
 
 [![CC0](http://mirrors.creativecommons.org/presskit/buttons/88x31/svg/cc-zero.svg)](https://creativecommons.org/publicdomain/zero/1.0/)
-
-
-
-
-
-
-
-
