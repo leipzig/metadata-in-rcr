@@ -19,7 +19,7 @@ dependencies:
   - r-ggpubr
   - r-ggthemes
   - r-here
-  - libstdcxx-ng
+  - r-bibtex
   - conda-build
   - autopep8
   - entrez-direct

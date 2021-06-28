@@ -29,3 +29,5 @@ src/timeline.html
 .bashrc
 
 .jupyter-server-log.txt
+
+src/timeline/timeline.html
