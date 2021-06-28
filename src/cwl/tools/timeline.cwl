@@ -61,7 +61,7 @@ doc:
 
 
 $schemas: 
-  - https://schema.org/version/3.9/schema.rdf
+  - https://schema.org/version/latest/schemaorg-current-https.rdf
 
 $namespaces: 
   iana: https://www.iana.org/assignments/media-types/

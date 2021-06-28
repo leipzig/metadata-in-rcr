@@ -1,0 +1,6 @@
+#!/bin/bash
+
+# source: https://discourse.jupyter.org/t/glibcxx-3-4-26-not-found-from-rstudio/7778/8
+set -e
+export LD_LIBRARY_PATH=${NB_PYTHON_PREFIX}/lib:${LD_LIBRARY_PATH}
+exec "$@"

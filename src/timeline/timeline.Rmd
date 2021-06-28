@@ -7,8 +7,9 @@ output:
     theme: paper
     toc: false
     code_folding: hide
+params:
+  useLive: true
 ---
-
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
@@ -24,11 +25,12 @@ library(ggpubr)
 ```
 
 ## Fetching and processing data from Awesome Reproducible Research
-There is some munging that needs to be done to access the publication dates, clean up the sizes, simplify approaches into their main goals, and classify by macrofield
+
+There is some munging that needs to be done to access the publication dates, clean up the sizes, simplify approaches into their main goals, and classify by macrofield.
+
 ```{r fetchandprocess}
 #try to parse the github repo as it is now vs a commit we know will work
-useLive<-TRUE
-if(useLive){
+if(params$useLive){
   url<-"https://raw.githubusercontent.com/leipzig/awesome-reproducible-research/master/readme.md"
 }else{
   url<-"https://raw.githubusercontent.com/leipzig/awesome-reproducible-research/98a6fbaafd70eb80b2bc9c7987bb4618b5d0bd2b/readme.md"
@@ -79,11 +81,14 @@ ggplot(timeline) +
 ```
 
 ## Session
+
 ```{r session}
 sessionInfo()
 ```
 
 ## Git commit
-```{bash git, engine.opts='-l'}
-git -C / show --summary
+
+```{r git}
+# (bash cells don't play nice with conda in Binder)
+cat(system2("git", c("show", "--summary"), stdout = TRUE), sep = "\n")
 ```
