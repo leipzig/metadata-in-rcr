@@ -1,6 +1,8 @@
 # The Role of Metadata in Reproducible Computational Research
 
-This is a supplemental resource to Leipzig et al. "The Role of Metadata in Reproducible Computational Research" https://arxiv.org/pdf/2006.08589.pdf
+This is a supplemental resource to Leipzig et al. "The Role of Metadata in Reproducible Computational Research" now published in Cell Patterns https://www.cell.com/patterns/fulltext/S2666-3899(21)00170-7
+
+Contributions are welcome!
 
 ## Organization
 
@@ -126,10 +128,6 @@ For development purposes, you can also run `repo2docker` locally in the director
 ```bash
 repo2docker --editable .
 ```
-
-## Contribute
-
-Contributions welcome!
 
 ## License
 
