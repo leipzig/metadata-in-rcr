@@ -4,57 +4,57 @@ CIF2	Input	Crystallography	10.1107/s1600576715021871	https://www.iucr.org/resour
 DATS	Input	Biomedical	10.1093/gigascience/giz165	https://github.com/datatagsuite		JSON		
 DICOM	Input	Images	10.1148/radiographics.12.2.1561424	https://www.dicomstandard.org/	dicom	Custom	Key-Value	
 EML	Input	Ecology	10.1016/j.ecoinf.2005.08.004	https://eml.ecoinformatics.org/		XML		
-FAANG	Input	Specimens		https://www.ebi.ac.uk/vg/faang		Tabular		
-GBIF	Input	Biodiversity	10.1371/journal.pone.0102623	https://www.gbif.org/		JSON		
-GO	Input	Genes	10.1038/75556	http://geneontology.org/		XML		
-ISO/TC 276	Input	Biotechnology		https://www.iso.org/committee/4514241.html				
-MIAME	Input	Microarrays	10.1038/ng1201-365	https://www.ncbi.nlm.nih.gov/geo/info/MIAME.html		XML		
-NetCDF	Input	Arrays	10.1109/38.56302	https://www.unidata.ucar.edu/software/netcdf/				
-OGC	Input	Geospatial		https://www.ogc.org/				
-ThermoML	Input	Compounds	10.1021/je034088i	https://www.nist.gov/mml/acmd/trc/thermoml		XML		
-CRAN	Tools	R packages		http://cran.r-project.org/				
-Conda	Tools	Dependencies		https://docs.conda.io/				
+FAANG	Input	Specimens		https://www.ebi.ac.uk/vg/faang		Tabular		sample and experiment metadata for farm animal genomes
+GBIF	Input	Biodiversity	10.1371/journal.pone.0102623	https://www.gbif.org/		JSON		species occurrence and biodiversity records
+GO	Input	Genes	10.1038/75556	http://geneontology.org/		XML		controlled vocabulary of gene and gene product functions
+ISO/TC 276	Input	Biotechnology		https://www.iso.org/committee/4514241.html				ISO committee defining biotechnology data standards
+MIAME	Input	Microarrays	10.1038/ng1201-365	https://www.ncbi.nlm.nih.gov/geo/info/MIAME.html		XML		minimum information to interpret a microarray experiment
+NetCDF	Input	Arrays	10.1109/38.56302	https://www.unidata.ucar.edu/software/netcdf/				self-describing, array-oriented scientific data
+OGC	Input	Geospatial		https://www.ogc.org/				open standards for geospatial content and services
+ThermoML	Input	Compounds	10.1021/je034088i	https://www.nist.gov/mml/acmd/trc/thermoml		XML		thermodynamic and thermophysical property data
+CRAN	Tools	R packages		http://cran.r-project.org/				R package DESCRIPTION metadata (dependencies, authors)
+Conda	Tools	Dependencies		https://docs.conda.io/				package and environment dependency specifications
 pip setup.cfg	Tools	Python modules		https://pypi.org/project/pip/		CFG	Key-Value	Python cfg files have headers and key-value pairs similar to Windows INI files
-EDAM	Tools	Bfx data	10.1093/bioinformatics/btt113	http://edamontology.org/				
-CodeMeta	Tools	Source code		https://codemeta.github.io/				
-Biotoolsxsd	Tools	Bfx software	10.1093/nar/gkv1116	https://github.com/unioslo/biotoolsxsd		XML		
-DOAP	Tools	Software		https://github.com/ewilderj/doap		XML		
-ontosoft	Tools	Geo software		https://www.ontosoft.org/				
-SWO	Tools	Bfx Software	10.1186/2041-1480-5-25	https://www.ebi.ac.uk/ols/ontologies/swo				
-OBCS	Reports	Biostatistics	10.1186/s13326-016-0100-2	http://www.obofoundry.org/ontology/obcs.html				
-STATO	Reports	Statistics		http://stato-ontology.org/				
-SDMX	Reports	Statistics		https://sdmx.org/		JSON		
-DDI	Reports	Studies		https://ddialliance.org/		XML		
-MEX	Reports	ML	10.1145/2814864.2814883	http://aksw.org/Projects/MEX.html		XML		
-MLSchema	Reports	ML		https://github.com/ML-Schema/				
-MLFlow	Reports	ML		https://mlflow.org/				
-Rmd	Reports	Docs		https://rmarkdown.rstudio.com/		YAML	Key-Value	
+EDAM	Tools	Bfx data	10.1093/bioinformatics/btt113	http://edamontology.org/				ontology of bioinformatics operations, data, formats, and topics
+CodeMeta	Tools	Source code		https://codemeta.github.io/				schema.org-based crosswalk for software metadata
+Biotoolsxsd	Tools	Bfx software	10.1093/nar/gkv1116	https://github.com/unioslo/biotoolsxsd		XML		XML schema behind the bio.tools software registry
+DOAP	Tools	Software		https://github.com/ewilderj/doap		XML		Description of a Project vocabulary for software projects
+ontosoft	Tools	Geo software		https://www.ontosoft.org/				ontology for describing and sharing scientific software
+SWO	Tools	Bfx Software	10.1186/2041-1480-5-25	https://www.ebi.ac.uk/ols/ontologies/swo				ontology of software, its inputs, outputs, and tasks
+OBCS	Reports	Biostatistics	10.1186/s13326-016-0100-2	http://www.obofoundry.org/ontology/obcs.html				ontology of biological and clinical statistics
+STATO	Reports	Statistics		http://stato-ontology.org/				ontology of statistical methods and tests
+SDMX	Reports	Statistics		https://sdmx.org/		JSON		standard for exchanging statistical data and metadata
+DDI	Reports	Studies		https://ddialliance.org/		XML		documentation for social, behavioral, and economic data
+MEX	Reports	ML	10.1145/2814864.2814883	http://aksw.org/Projects/MEX.html		XML		lightweight vocabulary for interchanging machine learning experiments
+MLSchema	Reports	ML		https://github.com/ML-Schema/				schema for describing machine learning algorithms and experiments
+MLFlow	Reports	ML		https://mlflow.org/				tracking of ML experiments, runs, parameters, and models
+Rmd	Reports	Docs		https://rmarkdown.rstudio.com/		YAML	Key-Value	YAML front matter for reproducible R Markdown reports
 CWL	Pipelines		10.6084/m9.figshare.3115156.v2	https://www.commonwl.org/		YAML		
 CWLProv	Pipelines		10.1093/gigascience/giz095	https://github.com/common-workflow-language/cwlprov				
 RO-Crate	Pipelines			https://researchobject.github.io/ro-crate/1.0/				
-RO	Pipelines			http://www.researchobject.org/				
-WICUS	Pipelines			http://vocab.linkeddata.es/wicus/wicus/				
-OPM	Pipelines			https://openprovenance.org/opm/				
+RO	Pipelines			http://www.researchobject.org/				bundles data, methods, and provenance into a single research object
+WICUS	Pipelines			http://vocab.linkeddata.es/wicus/wicus/				ontology for conserving the computational infrastructure of workflows
+OPM	Pipelines			https://openprovenance.org/opm/				model for representing provenance as a directed graph
 PROV-O	Pipelines			https://www.w3.org/TR/prov-o/				
 ReproZip	Pipelines			https://www.reprozip.org/				The config for ReproZip is YAML. The actual recorded sessions are more like coredumps.
-ProvOne	Pipelines			https://purl.dataone.org/provone-v1-dev				
-WES	Pipelines							
+ProvOne	Pipelines			https://purl.dataone.org/provone-v1-dev				extends PROV to capture scientific workflow provenance
+WES	Pipelines							GA4GH API for submitting and monitoring workflow runs
 BagIt	Pipelines			https://tools.ietf.org/html/rfc8493				
-BCO	Pipelines							
-ERC	Pipelines	Research Compendia	10.5281/zenodo.2203844	https://o2r.info/erc-spec/		YAML	Key-Value	
-BEL	Publication	Biology	10.1016/j.drudis.2013.12.011	https://biological-expression-language.github.io/	selventa_small_corpus.bel	Custom		
-DC	Publication							
-BioPAX	Publication	Biology	10.1038/nbt1210-1308c	http://www.biopax.org/	https://reactome.org/download/current/biopax.zip	XML	OWL/RDF	
-JATS	Publication	Articles		https://jats.nlm.nih.gov/		XML	Tags DTD	
-ONIX	Publication							
-MeSH	Publication							
-LCSH	Publication							
-MP	Publication	Micropublications	10.1186/2041-1480-5-28				OWL	
-Open PHACTS	Publication	Drugs	10.1016/j.drudis.2012.05.016	https://www.openphacts.org/			RDF	
-SWAN	Publication	Neuromedicine	10.1016/j.jbi.2008.04.010					
-SPAR	Publication	Publishing		http://www.sparontologies.net/			OWL	
-PWO	Publication	Publishing	10.3233/SW-160230					
-PAV	Publication	Authorship	10.1186/2041-1480-4-37			XML	RDF	
-Manubot	Publication	Publishing			manubot_metadata.yaml	YAML		
-ReScience	Publication	Publishing			rescience_metadata.yaml	YAML		
-PandocScholar	Publication	Publishing			pandocscholar_metadata.yaml	YAML		
+BCO	Pipelines							BioCompute Object records regulatory bioinformatics pipelines
+ERC	Pipelines	Research Compendia	10.5281/zenodo.2203844	https://o2r.info/erc-spec/		YAML	Key-Value	Executable Research Compendium packaging code, data, and environment
+BEL	Publication	Biology	10.1016/j.drudis.2013.12.011	https://biological-expression-language.github.io/	selventa_small_corpus.bel	Custom		Biological Expression Language for causal biological relationships
+DC	Publication							Dublin Core general-purpose metadata element set
+BioPAX	Publication	Biology	10.1038/nbt1210-1308c	http://www.biopax.org/	https://reactome.org/download/current/biopax.zip	XML	OWL/RDF	standard for representing biological pathway data
+JATS	Publication	Articles		https://jats.nlm.nih.gov/		XML	Tags DTD	XML tag set for marking up scholarly journal articles
+ONIX	Publication							metadata standard for the book and publishing supply chain
+MeSH	Publication							controlled vocabulary for indexing biomedical literature
+LCSH	Publication							Library of Congress subject headings for bibliographic records
+MP	Publication	Micropublications	10.1186/2041-1480-5-28				OWL	micropublications model linking scientific claims to evidence
+Open PHACTS	Publication	Drugs	10.1016/j.drudis.2012.05.016	https://www.openphacts.org/			RDF	semantic interoperability across drug discovery datasets
+SWAN	Publication	Neuromedicine	10.1016/j.jbi.2008.04.010					ontology for scientific discourse in neuromedicine
+SPAR	Publication	Publishing		http://www.sparontologies.net/			OWL	suite of ontologies for semantic publishing and referencing
+PWO	Publication	Publishing	10.3233/SW-160230					ontology describing the steps of a publishing workflow
+PAV	Publication	Authorship	10.1186/2041-1480-4-37			XML	RDF	provenance, authoring, and versioning ontology
+Manubot	Publication	Publishing			manubot_metadata.yaml	YAML		metadata for collaborative, automated manuscript writing
+ReScience	Publication	Publishing			rescience_metadata.yaml	YAML		metadata for peer-reviewed replications of computational research
+PandocScholar	Publication	Publishing			pandocscholar_metadata.yaml	YAML		scholarly article metadata authored through Pandoc
